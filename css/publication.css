@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0b1c2d;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    right: 180px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: transparent;   /* 🔥 no black */
+    z-index: 10;
+}
+
+header nav a {
+    margin-left: 20px;
+    font-size: 18px;
+    color:  #009bca;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #00d9ff;
+}
+
+.logo img {
+    width: 60px;
+    position: relative;
+    left: 1250px;
+    top: 10px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(0,217,255,0.6));
+}
+
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Dark blue gradient overlay */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #0f2e4f 0%, #071421 80%);
+  z-index: -2;
+}
+
+.audri-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px ;
+  gap: 60px;
+}
+
+.audri-content {
+  width: 50%;
+  position: relative;
+  left: 30px;
+  top: 50px;
+}
+
+.audri-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.audri-content p {
+  font-size: 16.5px;
+  color: #44b0e2;
+}
+
+.book-container{
+display:flex;
+align-items:center;
+justify-content:center;
+position: relative;
+left: 40px;
+top: 55px;
+gap:30px;
+margin-top:40px;
+}
+
+#flipbook{
+width:500px;
+height:400px;
+box-shadow:0 30px 80px rgba(0,0,0,0.6);
+}
+
+#flipbook .page{
+background:white;
+border:1px solid #ddd;
+}
+
+#flipbook .hard{
+background:#0f2e4f;
+color:white;
+font-weight:bold;
+}
+
+#flipbook img{
+width:100%;
+height:100%;
+object-fit:contain;
+background:white;
+}
+
+button{
+padding:5px 10px;
+font-size:20px;
+cursor:pointer;
+border:none;
+background:#00f7ff;
+color:black;
+border-radius:10px;
+}
+button:hover{
+background:#00d9ff;
+}
+
+.previous-audri {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.book-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book {
+  width: 180px;
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.book img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.book:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+.wall-magazine {
+  padding: 80px 10%;
+  position: relative;
+  z-index: 2;
+}
+
+.wall-magazine h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.6s ease;
+  cursor: grab;
+}
+
+.slide {
+  min-width: 100%;
+  height: 80vh;
+  flex-shrink: 0;
+}
+
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 8px;
+}
+
+.arrow.left { left: 20px; }
+.arrow.right { right: 20px; }
+
+.arrow:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+#fullscreenBtn{
+position:absolute;
+top:90px;
+right:245px;
+padding:10px 15px;
+background: linear-gradient(90deg, #00d4ff, #00ffcc);
+color: #fff;
+border:none;
+cursor:pointer;
+border-radius:10px;
+font-weight:bold;
+}
+
+#fullscreenBtn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+.floating-blur {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 212, 255, 0.2);
+  filter: blur(120px);
+  top: 20%;
+  left: 10%;
+  animation: floatMove 8s ease-in-out infinite alternate;
+}
+
+.blur2 {
+  background: rgba(0, 255, 204, 0.2);
+  top: 60%;
+  left: 70%;
+  animation-delay: 3s;
+}
+
+@keyframes floatMove {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-60px); }
+}

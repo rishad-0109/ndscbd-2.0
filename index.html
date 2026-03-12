@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Science Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="hero-canvas"></canvas>
+ 
+   
+<div id="space-loader">
+
+    <canvas id="warpCanvas"></canvas>
+
+    <div class="loader-ui">
+        <h1>NDSC</h1>
+        <p>Initializing Scientific Systems...</p>
+
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+</div>
+
+<header>
+  <div class="logo">
+    <img src="images/cropped-logo.png" alt="">    
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="activities.html">Activities</a>
+    <a href="publication.html">Publication</a>
+    <a href="executives.html">Executives</a>
+  </nav>
+</header>
+
+<section class="hero">
+    
+    <div class="hero-planet"></div>
+    
+    <div class="hero-overlay"></div>
+
+    <div class="hero-container">
+    
+        <!-- TEXT LEFT -->
+        <div class="hero-text">
+            <h1>
+                <span>Join</span> the <br>
+                Community of <br>
+                Science <br>
+                Enthusiasts
+            </h1>
+
+            <p>
+            On the auspicious day of September 18, 1955, the illustrious biologist Father R. W. Tim, C.S.C. (Ph.D.) founded the Notre Dame Science Club at Notre Dame College—the first science club in Bangladesh and the pioneer of the nation’s science club movement. Guided by the inspiring motto ‘Science in the Service of Man,’ the club was established to nurture scientific curiosity, encourage innovation, cultivate future scientists, and illuminate society with the transformative power of scientific knowledge
+           </p>
+           
+        </div>
+
+        <!-- LOGO RIGHT -->
+        <div class="hero-logo">
+        </div>
+
+    </div>
+
+    <audio id="spaceSound" autoplay loop>
+    <source src="audio/space-ambient.mp3" type="audio/mp3">
+    </audio>
+
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>LEGACY OF 70 YEARS</span>
+    <span>LEGACY OF 70 YEARS</span>
+    <span>LEGACY OF 70 YEARS</span>
+    <span>LEGACY OF 70 YEARS</span>
+  </div>
+</div>
+
+<section class="video-section">
+
+<h2 class="section-title">CHECK OUT OUR <span>SCIENCE MEDIA</span></h2>
+
+<div class="video-container">
+
+<div class="video-main">
+
+<iframe 
+width="100%" 
+height="100%" 
+src="intro.mp4" 
+title="Science Club Video"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="video-side">
+
+<div class="video-item">
+<img src="images/vid-1.jpg">
+<p>Holographic Universe Theory</p>
+</div>
+
+<div class="video-item">
+<img src="images/vid-2.jpg">
+<p>Epigenetic Memory</p>
+</div>
+
+<div class="video-item">
+<img src="images/vid-3.jpg">
+<p>Are We Alone in the Universe?</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="strength-section">
+    
+    <div class="container">
+        <h1 style="color: aqua;">Sectors We Excel At</h1>
+
+        <div class="strength-grid">
+            <div class="strength-box" onclick="openPopup('administration')">
+                <img src="images/admin.png" alt="">
+                <h3>Administ.</h3>
+            </div>
+
+            <div class="strength-box" onclick="openPopup('research')">
+                <img src="images/project.png" alt="">
+                <h3>Project & Research</h3>
+            </div>
+
+            <div class="strength-box" onclick="openPopup('publication')">
+                <img src="images/publication.png" alt="">
+                <h3>Publication</h3>
+            </div>
+
+            <div class="strength-box" onclick="openPopup('ict')">
+                <img src="images/ict.png" alt="">
+                <h3>ICT</h3>
+            </div>
+             <div class="strength-box" onclick="openPopup('lws')">
+                <img src="images/l.png" alt="">
+                <h3>LWS</h3>
+            </div>
+        </div>
+    </div>
+     <div class="strength-description">
+<p>Notre Dame Science Club Bases on These Fundamentals with an objective to Spread Science and ignite humans’ inner thought & curiosities. It stands with its immense potentiality and profound associates contributing to the 21st century revolution.        </p>
+</section>
+
+<section class="events-section">
+
+  <h2 class="section-title">Our Activities</h2>
+
+  <div class="events-wrapper">
+    <button class="arrow left" onclick="slideLeft()">&#10094;</button>
+
+    <div class="events-carousel" id="eventsCarousel">
+      
+      
+      <div class="event-card">
+        <img src="images/001.jpg">
+        <h3> AIUB Campus Tour & Workshop 2025</h3>
+        <p>10 March 2026</p>
+        <a href="https://www.facebook.com/share/p/1CHJxskgfQ/" class="learn-btn">Learn More</a>
+      </div>
+        
+      <div class="event-card" onclick="openEvent('event2')">
+        <img src="images/011.jpg">
+        <h3>Annual Science Fest 2025</h3>
+        <p>25 April 2026</p>
+        <a href="https://www.facebook.com/share/p/18CNrgv5M6/" class="learn-btn">Learn More</a>
+      </div>
+
+      <div class="event-card" onclick="openEvent('event3')">
+        <img src="images/012.jpg">
+        <h3>70th Anniversary Celebration</h3>
+        <p>15 May 2026</p>
+        <a href="https://www.facebook.com/share/p/18Mn2w5GZL/" class="learn-btn">Learn More</a>
+      </div>
+
+      <div class="event-card" onclick="openEvent('event4')">
+        <img src="images/013.jpg">
+        <h3>Regular Session</h3>
+        <p>05 June 2026</p>
+        <a href="https://www.facebook.com/share/p/14UEwcK57Qp/" class="learn-btn">Learn More</a>
+      </div>
+       <div class="event-card" onclick="openEvent('event4')">
+        <img src="images/014.jpg">
+        <h3>Brainstorming Saga 1.0 on Stereochemistry</h3>
+        <p>05 June 2026</p>
+        <a href="https://www.facebook.com/share/p/1Kr8avuQMC/" class="learn-btn">Learn More</a>
+      </div>
+       <div class="event-card" onclick="openEvent('event4')">
+        <img src="images/010.jpg">
+        <h3> Physics Olympiad Seminar</h3>
+        <p>05 June 2026</p>
+        <a href="https://www.facebook.com/share/p/1ByMw9Gqvt/" class="learn-btn">Learn More</a>
+      </div>
+      
+
+    </div>
+
+    <button class="arrow right" onclick="slideRight()">&#10095;</button>
+  </div>
+
+</section>
+
+
+
+<section class="why-join">
+  <div class="container">
+    <h2 class="section-title">
+      WHY YOU SHOULD <span>JOIN NDSC?</span>
+    </h2>
+
+    <div class="why-wrapper">
+
+      <!-- Box 1 -->
+      <div class="why-item">
+        <div class="why-image">
+          <img src="images/016.jpg" alt="Experience">
+        </div>
+        <h3>Historical Legacy & Lead in Science Education :</h3>
+        <p>
+         Notre Dame Science Club holds the opportunity to be part of a club with a long-standing tradition of excellence in science education and contribute to the legacy of one of the most influential science communities in the region that has pioneered scientific clubs and activities in Bangladesh
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="why-item">
+        <div class="why-image">
+          <img src="images/009.jpg" alt="Learning">
+        </div>
+        <h3>Research Development & Expeimental Skill :</h3>
+        <p>
+          Notre Dame Science Club often involves in various scientific research, experiments and projects where you can learn new things and ideas to strengthen your critical thinking, problem solving skills. To help you more with that we have a dedicated “Research & Development Wing” where you will meet more people who shares the same interests as you
+        </p>
+
+      </div>
+
+      <!-- Box 3 -->
+      <div class="why-item">
+        <div class="why-image">
+          <img src="images/007.jpg" alt="Networking">
+        </div>
+        <h3> Engagement in Competitive Competitions </h3>
+        <p>
+          Notre Dame Science Club always gives the advisability to challenge yourself by participating in science Olympiads and competitions to represent your school and country on national and international platforms and at the same time paves the way to gain self-recognition through your achievements by improving your skills and knowledge through the competitive spirit
+        </p>
+      
+      </div>
+      <!-- Box 4 -->
+
+      <div class="why-item">
+        <div class="why-image">
+          <img src="images/019.jpg" alt="Networking">
+        </div>
+        <h3>Building Leadership & Collaboration Skills </h3>
+        <p>
+          Notre Dame Science Club always encourages to solve problems and achieve common goals with teamwork and taking leadership roles in organizing projects, competitions, and activities in order to gain experience, learning to manage responsibilities, coordinate tasks, and delegate work effectively for future leadership roles in both academic and professional environments
+        </p>
+        
+      </div>
+         <!-- Box 5 -->
+      <div class="why-item">
+        <div class="why-image">
+          <img src="images/020.jpg" alt="Networking">
+        </div>
+        <h3>Proficiency in Social Networking & Discipline :</h3>
+        <p>
+          Notre Dame Science Club prefers to build connections with like-minded individuals, mentors, and professionals in the science field by attending networking events, workshops, and conferences to enhance your professional profile and develop a professional identity in the community as well as getting career guidance from experienced scientists and faculty members
+        </p>
+       
+      </div>
+      <!-- Box 6 -->
+       <div class="why-item">
+        <div class="why-image">
+          <img src="images/010.jpg" alt="Networking">
+        </div>
+        <h3>Commitment to Social Awareness and Service :</h3>
+        <p>
+       Notre Dame Science Club is deeply committed to actively contribute to the community for developing through science-driven projects and be a part of initiatives that use science for social good, like health, education, and environment to promote awareness on important global issues like climate change, health crises, and attain not only sustainability but also develop a sense of responsibility of the young generation towards society and the environment
+        </p>
+       
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="contact-section fade-in">
+
+
+
+<div class="container">
+
+<h2 class="contact-title">📡 Contact The Cosmos</h2>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<div class="info-card">
+<h3>📧 Email</h3>
+<p>scienceclub@gmail.com</p>
+</div>
+
+<div class="info-card">
+<h3>📍 Location</h3>
+<p>G. P. O. Box No. 5 Toyenbee Circular Rd,<br>Dhaka 1000, Bangladesh</p>
+</div>
+
+<div class="info-card">
+<h3>📱 Phone</h3>
+<p>+880-XXXXXXXXXX</p>
+</div>
+
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="👨‍🚀 Your Name">
+
+<input type="email" placeholder="📧 Your Email">
+
+<textarea placeholder="💬 Your Message"></textarea>
+
+<button type="submit" class="space-btn">
+🚀 Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="space-footer">
+
+<div class="footer-stars"></div>
+
+<div class="footer-container">
+
+<div class="footer-links">
+<h3>Navigation</h3>
+<a href="#hero">Home</a>
+<a href="#events">Events</a>
+<a href="#videos">Media</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="footer-logo">
+
+<img src="images/LogogradientAsset-15@4x.png" alt="Science Club Logo">
+
+<h2>Science Club</h2>
+
+<a href="developers.html" class="dev-btn">🚀 Developers</a>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>Contact</h3>
+
+<p>📍 G.P.O Box 5, Toyenbee Circular Rd,<br>Dhaka 1000</p>
+
+<p>📧 scienceclub@gmail.com</p>
+
+<p>📞 +880-XXXXXXXXXX</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Science Club | Exploring the Universe 🌌</p>
+</div>
+
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
+
+<!-- EVENT POPUP -->
+<div id="eventModal" class="event-modal">
+  <div class="event-modal-content">
+    <span class="close-btn" onclick="closeEvent()">✖</span>
+    <div id="eventDetails"></div>
+  </div>
+</div>
+
+<!-- Popup Modal -->
+<div id="popupModal" class="popup-modal">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">✖</span>
+    <div id="popupText"></div>
+  </div>
+</div>
+
+<script>
+const descriptions = {
+  administration: `
+    <h2>Administration</h2>
+    <p>Ensures smooth operation and management of club activities.</p>
+    <p>Coordinates planning, logistics and execution of events.</p>
+  `,
+  research: `
+    <h2>Project & Research</h2>
+    <p>Conducts scientific research and innovation-based projects.</p>
+    <p>Encourages experimentation and analytical development.</p>
+  `,
+  publication: `
+    <h2>Publication</h2>
+    <p>Publishes wall magazines, journals and annual publications.</p>
+    <p>Promotes scientific writing and knowledge sharing.</p>
+  `,
+  ict: `
+    <h2>ICT Wing</h2>
+    <p>Handles digital media, website management and tech support.</p>
+    <p>Maintains digital infrastructure of the club.</p>
+  `
+};
+
+function openPopup(section) {
+  document.getElementById("popupText").innerHTML = descriptions[section];
+  document.getElementById("popupModal").classList.add("active");
+}
+
+function closePopup() {
+  document.getElementById("popupModal").classList.remove("active");
+}
+
+window.onclick = function(e) {
+  const modal = document.getElementById("popupModal");
+  if (e.target === modal) {
+    closePopup();
+  }
+};
+</script>
+
+<script>
+const carousel = document.getElementById("eventsCarousel");
+
+// Arrow buttons
+function slideLeft() {
+  carousel.scrollLeft -= 300;
+}
+
+function slideRight() {
+  carousel.scrollLeft += 300;
+}
+
+// Autoplay
+setInterval(() => {
+  carousel.scrollLeft += 1;
+  if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+    carousel.scrollLeft = 0;
+  }
+}, 20);
+
+// Drag scroll
+let isDown = false;
+let startX;
+let scrollLeft;
+
+carousel.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - carousel.offsetLeft;
+  scrollLeft = carousel.scrollLeft;
+});
+
+carousel.addEventListener("mouseleave", () => isDown = false);
+carousel.addEventListener("mouseup", () => isDown = false);
+
+carousel.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - carousel.offsetLeft;
+  const walk = (x - startX) * 2;
+  carousel.scrollLeft = scrollLeft - walk;
+});
+
+// Popup Data
+const eventData = {
+  event1: `<h2>Science Symposium</h2><p>Full event description here.</p>`,
+  event2: `<h2>Annual Science Fair</h2><p>Details about fair.</p>`,
+  event3: `<h2>Tech Workshop</h2><p>Workshop details.</p>`,
+  event4: `<h2>Quiz Championship</h2><p>Competition details.</p>`
+};
+
+function openEvent(event) {
+  document.getElementById("eventDetails").innerHTML = eventData[event];
+  document.getElementById("eventModal").classList.add("active");
+}
+
+function closeEvent() {
+  document.getElementById("eventModal").classList.remove("active");
+}
+
+window.onclick = function(e) {
+  if (e.target === document.getElementById("eventModal")) {
+    closeEvent();
+  }
+};
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("kCy8JjARPVjO6AMd1");
+})();
+
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_qtri9ca", "template_5bmmz78", this)
+    .then(function() {
+      alert("Message sent successfully 🚀");
+    }, function(error) {
+      alert("Failed to send message ❌");
+    });
+
+  this.reset();
+});
+</script>
+
+<script>
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("space-loader").style.opacity="0"
+
+setTimeout(()=>{
+
+document.getElementById("space-loader").style.display="none"
+
+},1000)
+
+},4500)
+
+})
+</script>
+
+<script src="js/warp-loader.js"></script>
+<script src="js/hero-animation.js"></script>
+
+<script>
+
+document.addEventListener("click", () => {
+const audio = document.getElementById("spaceSound");
+audio.volume = 0.4;
+audio.play();
+}, { once: true });
+
+</script>
+
+</body>
+</html>
