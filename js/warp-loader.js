@@ -1,5 +1,18 @@
 (function(){
 
+const loader = document.getElementById("space-loader");
+
+/* CHECK IF LOADER ALREADY SHOWN */
+
+if(sessionStorage.getItem("loaderShown")){
+    loader.style.display = "none";
+    return;
+}
+
+/* MARK LOADER AS SHOWN */
+
+sessionStorage.setItem("loaderShown","true");
+
 const canvas = document.getElementById("warpCanvas");
 if(!canvas) return;
 
@@ -48,17 +61,19 @@ requestAnimationFrame(animate);
 
 animate();
 
+/* LOADER FADE OUT */
+
 window.addEventListener("load",()=>{
 
 setTimeout(()=>{
 
-document.getElementById("space-loader").style.opacity="0";
+loader.style.opacity="0";
 
 setTimeout(()=>{
-document.getElementById("space-loader").style.display="none";
+loader.style.display="none";
 },1000);
 
-},4500);
+},2500);
 
 });
 

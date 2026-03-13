@@ -58,45 +58,45 @@ body::before {
   z-index: -2;
 }
 
-.audri-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px ;
-  gap: 60px;
+.audri-section{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:50px 8%;
+gap:60px;
+flex-wrap:wrap;
 }
 
-.audri-content {
-  width: 50%;
-  position: relative;
-  left: 30px;
-  top: 50px;
+.audri-content{
+max-width:300px;
 }
 
-.audri-content h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
+.audri-content h2{
+font-size:42px;
+margin-bottom:20px;
 }
 
-.audri-content p {
-  font-size: 16.5px;
-  color: #44b0e2;
+.audri-content p{
+font-size:16px;
+color:#44b0e2;
+line-height:1.8;
 }
 
 .book-container{
 display:flex;
 align-items:center;
 justify-content:center;
+gap:25px;
+margin-top:10px;
+flex-wrap:wrap;
 position: relative;
-left: 40px;
-top: 55px;
-gap:30px;
-margin-top:40px;
 }
 
 #flipbook{
 width:500px;
 height:400px;
+max-width:100%;
+aspect-ratio:5/4;
 box-shadow:0 30px 80px rgba(0,0,0,0.6);
 }
 
@@ -119,7 +119,7 @@ background:white;
 }
 
 button{
-padding:5px 10px;
+padding:10px 10px;
 font-size:20px;
 cursor:pointer;
 border:none;
@@ -131,16 +131,191 @@ button:hover{
 background:#00d9ff;
 }
 
+#fullscreenBtn{
+position:absolute;
+top:100px;
+right:340px;
+padding:10px 18px;
+background:linear-gradient(90deg,#00d4ff,#00ffcc);
+color:#fff;
+border:none;
+cursor:pointer;
+border-radius:10px;
+font-weight:bold;
+transition:0.3s ease;
+}
+
+#fullscreenBtn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+.reader-mode{
+background:radial-gradient(circle at center,#021221,#000814 80%);
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+overflow:hidden;
+}
+
+.reader-mode::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background-image:radial-gradient(white 1px,transparent 1px);
+background-size:40px 40px;
+opacity:0.2;
+animation:starsMove 40s linear infinite;
+}
+
+@keyframes starsMove{
+from{transform:translateY(0);}
+to{transform:translateY(-200px);}
+}
+
+.reader-mode #flipbook{
+
+box-shadow:
+0 0 40px #00f7ff,
+0 0 80px rgba(0,247,255,0.6),
+0 0 120px rgba(0,247,255,0.3),
+0 40px 120px rgba(0,0,0,0.9);
+
+transform:scale(1.05);
+transition:0.5s ease;
+
+}
+
+.reader-mode #prevBtn,
+.reader-mode #nextBtn{
+opacity:0.3;
+
+}
+
+.reader-mode #prevBtn:hover,
+.reader-mode #nextBtn:hover{
+opacity:2;
+transition:2s;
+}
+
+
+@media (max-width:1024px){
+
+.audri-section{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+/* remove absolute positioning */
+#fullscreenBtn{
+position:static;
+margin:20px 0;
+order:2;
+align-self:center;
+}
+
+/* text first */
+.audri-content{
+order:1;
+}
+
+/* book last */
+.book-container{
+order:3;
+}
+
+}
+
+@media (max-width:768px){
+
+.audri-section{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+/* remove absolute positioning */
+#fullscreenBtn{
+position:static;
+margin:20px 0;
+order:2;
+align-self:center;
+}
+
+/* text first */
+.audri-content{
+order:1;
+}
+
+/* book last */
+.book-container{
+order:3;
+}
+
+}
+
+@media (max-width:1024px){
+
+.audri-section{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.audri-content{
+max-width:700px;
+}
+
+#flipbook{
+width:420px;
+height:330px;
+}
+
+}
+
+@media (max-width:768px){
+
+.audri-section{
+padding:60px 20px;
+}
+
+.audri-content h2{
+font-size:32px;
+}
+
+.audri-content p{
+font-size:15px;
+}
+
+#flipbook{
+width:320px;
+height:250px;
+}
+
+button{
+font-size:16px;
+padding:6px 10px;
+}
+
+}
+
 .previous-audri {
   padding: 80px 10%;
   text-align: center;
 }
 
-.book-grid {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+.book-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:30px;
+max-width:900px;
+margin:auto;
 }
 
 .book {
@@ -220,24 +395,7 @@ background:#00d9ff;
   background: rgba(0,0,0,0.7);
 }
 
-#fullscreenBtn{
-position:absolute;
-top:90px;
-right:245px;
-padding:10px 15px;
-background: linear-gradient(90deg, #00d4ff, #00ffcc);
-color: #fff;
-border:none;
-cursor:pointer;
-border-radius:10px;
-font-weight:bold;
-}
 
-#fullscreenBtn:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
-  transition: 0.3s ease;
-}
 
 .floating-blur {
   position: absolute;

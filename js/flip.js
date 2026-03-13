@@ -11,17 +11,23 @@ elevation:50,
 
 when:{
 turning:function(){
+if(sound){
 sound.currentTime = 0;
 sound.play();
 }
 }
+}
 });
 
-$("#nextBtn").click(function(){
+/* NEXT BUTTON */
+
+$("#nextBtn").on("click", function(){
 $("#flipbook").turn("next");
 });
 
-$("#prevBtn").click(function(){
+/* PREVIOUS BUTTON */
+
+$("#prevBtn").on("click", function(){
 $("#flipbook").turn("previous");
 });
 
@@ -53,12 +59,23 @@ threshold:75
 
 });
 
-document.getElementById("fullscreenBtn").onclick = function(){
+const fullscreenBtn = document.getElementById("fullscreenBtn");
+const bookContainer = document.querySelector(".book-container");
 
-let elem = document.querySelector(".book-container");
+fullscreenBtn.onclick = function(){
 
-if(elem.requestFullscreen){
-elem.requestFullscreen();
+if(bookContainer.requestFullscreen){
+bookContainer.requestFullscreen();
 }
 
+bookContainer.classList.add("reader-mode");
+
 };
+
+document.addEventListener("fullscreenchange", function(){
+
+if(!document.fullscreenElement){
+bookContainer.classList.remove("reader-mode");
+}
+
+});
