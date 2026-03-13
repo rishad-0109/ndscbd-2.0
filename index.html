@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science Club</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
@@ -26,50 +27,49 @@
 
 </div>
 
-<header>
-  <div class="logo">
-    <img src="images/cropped-logo.png" alt="">    
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="activities.html">Activities</a>
-    <a href="publication.html">Publication</a>
-    <a href="executives.html">Executives</a>
-  </nav>
+<header class="header">
+
+<div class="header-container">
+
+<div class="logo">
+<img src="images/cropped-logo.png" alt="logo" >
+</div>
+
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="activities.html">Activities</a>
+<a href="publication.html">Publication</a>
+<a href="executives.html">Executives</a>
+</nav>
+
+</div>
+
 </header>
 
 <section class="hero">
-    
-    <div class="hero-planet"></div>
-    
-    <div class="hero-overlay"></div>
 
-    <div class="hero-container">
-    
-        <!-- TEXT LEFT -->
-        <div class="hero-text">
-            <h1>
-                <span>Join</span> the <br>
-                Community of <br>
-                Science <br>
-                Enthusiasts
-            </h1>
+<div class="hero-planet"></div>
 
-            <p>
-            On the auspicious day of September 18, 1955, the illustrious biologist Father R. W. Tim, C.S.C. (Ph.D.) founded the Notre Dame Science Club at Notre Dame College—the first science club in Bangladesh and the pioneer of the nation’s science club movement. Guided by the inspiring motto ‘Science in the Service of Man,’ the club was established to nurture scientific curiosity, encourage innovation, cultivate future scientists, and illuminate society with the transformative power of scientific knowledge
-           </p>
-           
-        </div>
+<div class="hero-overlay"></div>
 
-        <!-- LOGO RIGHT -->
-        <div class="hero-logo">
-        </div>
+<div class="hero-container">
 
-    </div>
+<div class="hero-text">
 
-    <audio id="spaceSound" autoplay loop>
-    <source src="audio/space-ambient.mp3" type="audio/mp3">
-    </audio>
+<h1>
+<span>Join</span> the <br>
+Community of <br>
+<span>Science </span><br>
+Enthusiasts
+</h1>
+
+<p>
+On the auspicious day of September 18, 1955, the illustrious biologist Father R. W. Tim, C.S.C. (Ph.D.) founded the Notre Dame Science Club at Notre Dame College—the first science club in Bangladesh and the pioneer of the nation’s science club movement.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -93,7 +93,7 @@
 <iframe 
 width="100%" 
 height="100%" 
-src="intro.mp4" 
+src="https://youtu.be/CXvLpiRFWqg?si=8ko-s_UNQQbrpUlN" 
 title="Science Club Video"
 frameborder="0"
 allowfullscreen>
@@ -125,43 +125,51 @@ allowfullscreen>
 </section>
 
 <section class="strength-section">
-    
-    <div class="container">
-        <h1 style="color: aqua;">Sectors We Excel At</h1>
 
-        <div class="strength-grid">
-            <div class="strength-box" onclick="openPopup('administration')">
-                <img src="images/admin.png" alt="">
-                <h3>Administ.</h3>
-            </div>
+<div class="strength-container">
 
-            <div class="strength-box" onclick="openPopup('research')">
-                <img src="images/project.png" alt="">
-                <h3>Project & Research</h3>
-            </div>
+<h1>Sectors We <span>Excel At</span></h1>
 
-            <div class="strength-box" onclick="openPopup('publication')">
-                <img src="images/publication.png" alt="">
-                <h3>Publication</h3>
-            </div>
+<div class="strength-grid">
 
-            <div class="strength-box" onclick="openPopup('ict')">
-                <img src="images/ict.png" alt="">
-                <h3>ICT</h3>
-            </div>
-             <div class="strength-box" onclick="openPopup('lws')">
-                <img src="images/l.png" alt="">
-                <h3>LWS</h3>
-            </div>
-        </div>
-    </div>
-     <div class="strength-description">
-<p>Notre Dame Science Club Bases on These Fundamentals with an objective to Spread Science and ignite humans’ inner thought & curiosities. It stands with its immense potentiality and profound associates contributing to the 21st century revolution.        </p>
+<div class="strength-box" onclick="openPopup('administration')">
+<img src="images/admin.png" alt="">
+<h3>Administ.</h3>
+</div>
+
+<div class="strength-box" onclick="openPopup('research')">
+<img src="images/project.png" alt="">
+<h3>Project </h3>
+</div>
+
+<div class="strength-box" onclick="openPopup('publication')">
+<img src="images/publication.png" alt="">
+<h3>Publication</h3>
+</div>
+
+<div class="strength-box" onclick="openPopup('ict')">
+<img src="images/ict.png" alt="">
+<h3>ICT</h3>
+</div>
+
+<div class="strength-box" onclick="openPopup('lws')">
+<img src="images/l.png" alt="">
+<h3>LWS</h3>
+</div>
+
+</div>
+
+<p class="strength-description">
+Notre Dame Science Club bases on these fundamentals with an objective to spread science and ignite humans’ inner thought & curiosities. It stands with its immense potentiality and profound associates contributing to the 21st century revolution.
+</p>
+
+</div>
+
 </section>
 
 <section class="events-section">
 
-  <h2 class="section-title">Our Activities</h2>
+  <h2 class="section-title">Our <span>Activities</span></h2>
 
   <div class="events-wrapper">
     <button class="arrow left" onclick="slideLeft()">&#10094;</button>
@@ -216,7 +224,6 @@ allowfullscreen>
   </div>
 
 </section>
-
 
 
 <section class="why-join">
@@ -350,6 +357,7 @@ allowfullscreen>
 
 </section>
 
+
 <footer class="space-footer">
 
 <div class="footer-stars"></div>
@@ -358,10 +366,10 @@ allowfullscreen>
 
 <div class="footer-links">
 <h3>Navigation</h3>
-<a href="#hero">Home</a>
-<a href="#events">Events</a>
-<a href="#videos">Media</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="activities.html">Activities</a>
+<a href="publication.html">Publication</a>
+<a href="executives.html">Executives</a>
 </div>
 
 <div class="footer-logo">
@@ -380,9 +388,9 @@ allowfullscreen>
 
 <p>📍 G.P.O Box 5, Toyenbee Circular Rd,<br>Dhaka 1000</p>
 
-<p>📧 scienceclub@gmail.com</p>
+<p>📧 ndsc.org@gmail.com</p>
 
-<p>📞 +880-XXXXXXXXXX</p>
+<p>📞 +880-1613-065319</p>
 
 </div>
 
@@ -470,45 +478,68 @@ window.onclick = function(e) {
 <script>
 const carousel = document.getElementById("eventsCarousel");
 
-// Arrow buttons
-function slideLeft() {
-  carousel.scrollLeft -= 300;
+function slideRight(){
+carousel.scrollBy({
+left:300,
+behavior:"smooth"
+});
 }
 
-function slideRight() {
-  carousel.scrollLeft += 300;
+function slideLeft(){
+carousel.scrollBy({
+left:-300,
+behavior:"smooth"
+});
 }
 
-// Autoplay
-setInterval(() => {
-  carousel.scrollLeft += 1;
-  if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
-    carousel.scrollLeft = 0;
-  }
-}, 20);
+/* AUTOPLAY */
 
-// Drag scroll
-let isDown = false;
-let startX;
-let scrollLeft;
+let autoSlide = setInterval(() => {
 
-carousel.addEventListener("mousedown", (e) => {
-  isDown = true;
-  startX = e.pageX - carousel.offsetLeft;
-  scrollLeft = carousel.scrollLeft;
+carousel.scrollBy({
+left:300,
+behavior:"smooth"
 });
 
-carousel.addEventListener("mouseleave", () => isDown = false);
-carousel.addEventListener("mouseup", () => isDown = false);
+/* restart when reaching end */
 
-carousel.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - carousel.offsetLeft;
-  const walk = (x - startX) * 2;
-  carousel.scrollLeft = scrollLeft - walk;
+if(carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth){
+carousel.scrollTo({
+left:0,
+behavior:"smooth"
+});
+}
+
+},2000);
+
+
+/* PAUSE ON HOVER */
+
+carousel.addEventListener("mouseenter",()=>{
+clearInterval(autoSlide);
 });
 
+carousel.addEventListener("mouseleave",()=>{
+
+autoSlide = setInterval(()=>{
+carousel.scrollBy({
+left:300,
+behavior:"smooth"
+});
+
+if(carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth){
+carousel.scrollTo({
+left:0,
+behavior:"smooth"
+});
+}
+
+},3000);
+
+});
+</script>
+
+<script>
 // Popup Data
 const eventData = {
   event1: `<h2>Science Symposium</h2><p>Full event description here.</p>`,
