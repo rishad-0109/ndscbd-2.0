@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science Club</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/nav.js" defer></script>
 </head>
 <body>
 
@@ -27,24 +29,7 @@
 
 </div>
 
-<header class="header">
 
-<div class="header-container">
-
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="activities.html">Activities</a>
-<a href="publication.html">Publication</a>
-<a href="executives.html">Executives</a>
-</nav>
-
-<div class="logo">
-<img src="images/cropped-logo.png" alt="logo">
-</div>
-
-</div>
-
-</header>
 
 <section class="hero">
 
@@ -455,6 +440,11 @@ const descriptions = {
     <h2>ICT Wing</h2>
     <p>Handles digital media, website management and tech support.</p>
     <p>Maintains digital infrastructure of the club.</p>
+  `,
+  lws: `
+    <h2>LWS Wing</h2>
+    <p>Literature, Writing & Science — promotes scientific writing and creative expression.</p>
+    <p>Organizes seminars, debates and knowledge sharing sessions.</p>
   `
 };
 
@@ -467,12 +457,12 @@ function closePopup() {
   document.getElementById("popupModal").classList.remove("active");
 }
 
-window.onclick = function(e) {
+window.addEventListener('click', function(e) {
   const modal = document.getElementById("popupModal");
   if (e.target === modal) {
     closePopup();
   }
-};
+});
 </script>
 
 <script>
@@ -557,11 +547,11 @@ function closeEvent() {
   document.getElementById("eventModal").classList.remove("active");
 }
 
-window.onclick = function(e) {
+window.addEventListener('click', function(e) {
   if (e.target === document.getElementById("eventModal")) {
     closeEvent();
   }
-};
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>

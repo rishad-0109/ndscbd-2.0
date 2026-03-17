@@ -27,8 +27,8 @@ function closeModal(){
 }
 
 /* Close modal when clicking outside */
-window.onclick = function(e){
+window.addEventListener('click', function(e){
     if(e.target == document.getElementById('modal')){
         closeModal();
     }
-}
+});

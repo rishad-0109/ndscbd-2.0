@@ -5,39 +5,18 @@ body {
   color: white;
 }
 
-/* HEADER */
-header {
-    position: fixed;
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    right: 180px;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
+    overflow-x: hidden;
     align-items: center;
-
-    background: transparent;   /* 🔥 no black */
-    z-index: 10;
+    justify-content: center;
 }
 
-header nav a {
-    margin-left: 20px;
-    font-size: 18px;
-    color:  #009bca;
-    transition: 0.3s;
-}
-
-header nav a:hover {
-    color: #00d9ff;
-}
-
-.logo img {
-    width: 60px;
-    position: relative;
-    left: 1250px;
-    top: 10px;
-    height: auto;
-    filter: drop-shadow(0 0 15px rgba(0,217,255,0.6));
-}
+/* HEADER - handled by nav.js + nav.css */
+header:not(.site-header) { display: none; }
+.logo img { display: none; }
 
 .activities-section {
   padding: 80px 8%;
@@ -253,6 +232,7 @@ display: inline-block;
 
 .floating-blur {
   position: absolute;
+  max-width: 100%;
   width: 300px;
   height: 300px;
   background: rgba(0, 212, 255, 0.2);
@@ -265,11 +245,50 @@ display: inline-block;
 .blur2 {
   background: rgba(0, 255, 204, 0.2);
   top: 60%;
-  left: 70%;
+  right: 20%;
   animation-delay: 3s;
 }
 
 @keyframes floatMove {
   from { transform: translateY(0px); }
   to { transform: translateY(-60px); }
+}
+/* ===================== RESPONSIVE ===================== */
+
+body {
+  padding-top: 80px;
+}
+
+.activities-section {
+  padding-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .workshop-card {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .workshop-content {
+    text-align: center;
+  }
+  .workshop-card img {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .activities-section {
+    padding: 30px 5%;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+  .tab-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }

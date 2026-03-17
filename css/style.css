@@ -194,7 +194,7 @@ color:#4cc4ff;
 .hero-planet{
 position:absolute;
 right:8%;
-top:22%;
+top:36%;
 width:300px;
 height:300px;
 border-radius:50%;
@@ -210,8 +210,9 @@ animation:rotatePlanet 40s linear infinite;
 
 @keyframes rotatePlanet{
 0%{transform:rotate(0deg);}
-100%{transform:rotate(
-    
+100%{transform:rotate(360deg);}
+}
+
 /* TAB */
 
 @media (max-width:680px){
@@ -1085,6 +1086,14 @@ gap:30px;
 grid-column:span 2;
 }
 
+.hero-planet
+{
+  top: 22% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  animation:rotatePlanet 40s linear infinite !important;
+}
+
 }
 
 /* MOBILE */
@@ -1369,3 +1378,154 @@ background:rgba(255,255,255,0.15);
 transform:translateX(8px);
 }
 
+
+/* ===================== RESPONSIVE OVERRIDES ===================== */
+
+body {
+  padding-top: 80px;
+}
+
+.hero {
+  padding-top: 0;
+}
+
+/* Video section responsive */
+@media (max-width: 900px) {
+  .video-container {
+    flex-direction: column;
+  }
+  .video-main {
+    min-width: unset;
+    width: 100%;
+    height: 260px;
+  }
+  .video-side {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video-item {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .video-section {
+    padding: 80px 5%;
+  }
+  .video-main {
+    height: 200px;
+  }
+  .video-side {
+    flex-direction: column;
+  }
+  .video-item {
+    flex: unset;
+    width: 100%;
+  }
+  .video-item img {
+    width: 90px;
+    height: 55px;
+  }
+}
+
+/* Strength section responsive */
+@media (max-width: 900px) {
+  .strength-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .strength-section {
+    padding: 80px 5%;
+  }
+  .strength-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .strength-section h1 {
+    font-size: 28px;
+  }
+}
+
+/* Events section */
+@media (max-width: 600px) {
+  .events-section {
+    padding: 80px 0;
+  }
+  .section-title {
+    font-size: 26px;
+    padding: 0 16px;
+  }
+  .event-card {
+    min-width: 280px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+/* Why join */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .why-section {
+    padding: 80px 5%;
+  }
+}
+
+/* Contact section */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Marquee */
+@media (max-width: 600px) {
+  .marquee-track span {
+    font-size: 36px;
+  }
+}
+
+/* Footer */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+  .footer-links {
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 28px;
+  }
+  .footer-links {
+    align-items: center;
+    transform: none;
+  }
+  .footer-contact {
+    text-align: center;
+  }
+}
+
+/* Hero needs no top padding since it's full viewport */
+.hero {
+  padding-top: 80px;
+}

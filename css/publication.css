@@ -6,39 +6,9 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER */
-header {
-    position: fixed;
-    width: 100%;
-    right: 180px;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: transparent;   /* 🔥 no black */
-    z-index: 10;
-}
-
-header nav a {
-    margin-left: 20px;
-    font-size: 18px;
-    color:  #009bca;
-    transition: 0.3s;
-}
-
-header nav a:hover {
-    color: #00d9ff;
-}
-
-.logo img {
-    width: 60px;
-    position: relative;
-    left: 1250px;
-    top: 10px;
-    height: auto;
-    filter: drop-shadow(0 0 15px rgba(0,217,255,0.6));
-}
+/* HEADER - handled by nav.js + nav.css */
+header:not(.site-header) { display: none; }
+.logo img { display: none; }
 
 
 #tsparticles {
@@ -418,4 +388,42 @@ margin:auto;
 @keyframes floatMove {
   from { transform: translateY(0px); }
   to { transform: translateY(-60px); }
+}
+/* ===================== RESPONSIVE ===================== */
+
+body {
+  padding-top: 80px;
+}
+
+.audri-section {
+  padding-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .audri-section {
+    padding: 30px 5%;
+    gap: 30px;
+  }
+  .audri-content {
+    max-width: 100%;
+  }
+  .audri-content h2 {
+    font-size: 28px;
+  }
+  #flipbook {
+    width: 280px;
+    height: 220px;
+  }
+  .previous-audri {
+    padding: 60px 5%;
+  }
+  .wall-magazine {
+    padding: 60px 5%;
+  }
+  .wall-magazine h2 {
+    font-size: 28px;
+  }
+  .slide {
+    height: 50vh;
+  }
 }
