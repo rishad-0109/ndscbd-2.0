@@ -39,8 +39,6 @@ width:100%;
 z-index:999;
 }
 
-/* CONTAINER */
-
 .header-container{
 max-width:1200px;
 margin:auto;
@@ -212,12 +210,9 @@ animation:rotatePlanet 40s linear infinite;
 
 @keyframes rotatePlanet{
 0%{transform:rotate(0deg);}
-100%{transform:rotate(360deg);}
-}
-
-/* ===================== */
-/* TABLET (iPad) */
-/* ===================== */
+100%{transform:rotate(
+    
+/* TAB */
 
 @media (max-width:680px){
 
