@@ -366,12 +366,13 @@ gap:25px;
 .strength-box{
 background:rgba(255,255,255,0.08);
 backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.15);
+border: 1px solid rgba(0,255,255,0.2);
 border-radius:20px;
 padding:25px 20px;
 text-align:center;
 transition:0.4s;
 cursor:pointer;
+min-width: 30px;
 }
 
 .strength-box:hover{
@@ -519,13 +520,18 @@ display:none;
 /* CARD */
 .event-card{
 min-width:370px;
-background:rgba(255,255,255,0.05);
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden; /* Keeps the image and overlay inside the rounded corners */
+  font-family: sans-serif;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 border:1px solid rgba(255,255,255,0.12);
 border-radius:18px;
-padding:30px;
 transition:0.35s;
 cursor:pointer;
-scroll-snap-align:start;
+/* scroll-snap-align:start; */
 }
 
 .event-card:hover{
@@ -536,11 +542,30 @@ background:rgba(255,255,255,0.15);
 /* IMAGE */
 
 .event-card img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:12px;
-margin-bottom:15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Spans the full card without stretching */
+  display: block;
+}
+.card-overlay {
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  
+  /* The Blur Effect */
+  background: rgba(29, 61, 73, 0.589); /* Semi-transparent white */
+  backdrop-filter: blur(2px); /* This creates the mild blur */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TITLE */
@@ -570,6 +595,7 @@ font-size:14px;
 text-decoration:none;
 font-weight:600;
 transition:0.3s;
+margin-bottom: 30px;
 }
 
 .learn-btn:hover{
@@ -639,13 +665,9 @@ font-size:28px;
 
 .event-card{
 min-width:200px;
-padding:15px;
 scroll-snap-align:start;
 }
 
-.event-card img{
-height:140px;
-}
 
 .arrow{
 font-size:22px;
