@@ -14,8 +14,9 @@
 }
 
 .site-header.scrolled {
-  background: transparent;
-  backdrop-filter: none;
+  background: #2f6df6;
+  background: rgba(11, 108, 187, 0.411); 
+  backdrop-filter: blur(10px);
   border-bottom: none;
 }
 
@@ -90,7 +91,7 @@
   background: none;
   border: none;
   padding: 4px;
-  z-index: 9100;
+  z-index: 9100mo;
 }
 
 .hamburger span {
@@ -106,7 +107,7 @@
 .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-.mobile-nav {
+/* .mobile-nav {
   display: flex;
   position: fixed;
   inset: 0;
@@ -121,7 +122,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.35s ease, visibility 0.35s ease;
-}
+} 
 
 .mobile-nav.open {
   opacity: 1;
@@ -146,6 +147,47 @@
   text-shadow: 0 0 20px #00e8ff;
 }
 
+*/
+/* The Mobile Sidebar Container */
+#mobileNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;          /* Width of the sidebar */
+  height: 100vh;         /* Full viewport height */
+    background: rgba(11, 108, 187, 0.411); 
+  backdrop-filter: blur(10px);
+ /* Change to your theme color */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;    /* Top padding to clear the header */
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  
+  /* The Secret Sauce: Start off-screen to the right */
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* When the JavaScript adds the .open class */
+#mobileNav.open {
+  transform: translateX(0);
+}
+
+/* Styling the links inside the sidebar */
+#mobileNav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#mobileNav a.active {
+  color: #007bff; /* Highlight color for current page */
+  font-weight: bold;
+}
 @media (max-width: 768px) {
   .header-inner {
     padding: 14px 24px;

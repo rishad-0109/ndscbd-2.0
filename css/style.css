@@ -213,6 +213,11 @@ animation:rotatePlanet 40s linear infinite;
 100%{transform:rotate(360deg);}
 }
 
+@keyframes rotatePlanetWithOffset {
+0%{transform:translate(-50%, -50%) rotate(0deg);}
+100%{transform:translate(-50%, -50%) rotate(360deg);}
+}
+
 /* TAB */
 
 @media (max-width:680px){
@@ -271,8 +276,14 @@ width:220px;
 height:220px;
 top:65%;
 right:50%;
-transform:translateX(50%);
-opacity:0.25;
+animation: rotatePlanetWithOffset 40s linear infinite;
+position:absolute;
+right:8%;
+top:36%;
+border-radius:50%;
+background:url("images/LogogradientAsset-15@4x.png") no-repeat center;
+background-size:cover;
+
 }
 
 }
@@ -1086,12 +1097,14 @@ gap:30px;
 grid-column:span 2;
 }
 
-.hero-planet
-{
-  top: 22% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  animation:rotatePlanet 40s linear infinite !important;
+.hero-planet {
+  top: 22%;
+  left: 50%;
+  animation: rotatePlanetWithOffset 40s linear infinite;
+  position: absolute;
+  border-radius: 50%;
+  background: url("images/LogogradientAsset-15@4x.png") no-repeat center;
+  background-size: cover;
 }
 
 }
@@ -1188,6 +1201,7 @@ width:70px;
   right: 20px;
   cursor: pointer;
   font-size: 18px;
+  display: none;
 }
 
 
@@ -1229,7 +1243,6 @@ button {
 
 button:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px cyan;
 }
 
 /* Scroll bar styling */
