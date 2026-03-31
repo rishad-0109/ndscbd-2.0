@@ -178,14 +178,14 @@
 /* Styling the links inside the sidebar */
 #mobileNav a {
   text-decoration: none;
-  color: #333;
+  color: #a4afb1;
   font-size: 1.2rem;
   padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
 
 #mobileNav a.active {
-  color: #007bff; /* Highlight color for current page */
+  color: #00b7ff; /* Highlight color for current page */
   font-weight: bold;
 }
 @media (max-width: 768px) {
@@ -210,5 +210,11 @@
   .header-logo img {
     width: 42px;
     height: 42px;
+  }
+  #mobileNav {
+    max-width:50vw;
+  }
+  #mobileNav a {
+    font-size: .8rem;
   }
 }

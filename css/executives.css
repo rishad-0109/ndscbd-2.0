@@ -17,13 +17,19 @@ header:not(.site-header) { display: none; }
   justify-content:center;
   gap:100px;
   padding:65px 0;
+  flex-direction: column;
 }
-
+.patron{
+  justify-content: center;align-items: center;
+    display: flex;
+  flex-direction: column;
+}
 .patron img{
   width:250px;
   height:250px;
   border-radius:50%;
   object-fit:cover;
+
 }
 
 .patron h3{
