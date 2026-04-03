@@ -1,277 +1,920 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Publication</title>
-  <link rel="stylesheet" href="css/publication.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | Notre Dame Science Club</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/nav.css">
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    /* ── Reset & Base ────────────────────────────────────────── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg:     #07071a;
+      --accent: #00d4ff;
+      --purple: #a78bfa;
+      --green:  #228dcfa8;
+      --text:   #ffffff;
+      --page-w: min(320px, 42vw);
+      --page-h: min(480px, 70vh);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    img { display: block; max-width: 100%; }
+    button { border: none; cursor: pointer; font-family: inherit; }
 
-  <script src="js/nav.js" defer></script>
-</head>
-
-<body>
-
-  <div id="tsparticles"></div>
-
-
-
-  <section class="audri-section">
-
-    <div class="floating-blur"></div>
-    <div class="floating-blur blur2"></div>
-
-    <div class="audri-content">
-      <h2>Audri 2025</h2>
-      <p>
-        Audri, the annual science publication of the Notre Dame Science Club, is a vibrant reflection of the curiosity,
-        passion, and intellectual spirit of the science-minded students of Notre Dame College. More than a collection of
-        student writings, it serves as a platform where research, analysis, and innovative ideas extend beyond the
-        classroom to reach a wider audience.
-        Celebrating science as a continuous journey of discovery, Audri encourages critical thinking, creativity, and
-        free expression. Through its pages, it inspires curiosity, broadens perspectives, and reveals the enduring
-        beauty of science while making knowledge engaging and accessible to all.
-      </p>
-    </div>
-
-
-    <div class="book-container">
-
-      <button id="prevBtn">◀</button>
-
-      <div id="flipbook">
-        <div class="hard"><img src="pages/1.png">
-      </div>
-
-
-        <div class="page"><img loading="lazy" src="pages/2.png"></div>
-        <div class="page"><img loading="lazy" src="pages/3.png"></div>
-        <div class="page"><img loading="lazy" src="pages/4.png"></div>
-        <div class="page"><img loading="lazy" src="pages/5.png"></div>
-        <div class="page"><img loading="lazy" src="pages/6.png"></div>
-        <div class="page"><img loading="lazy" src="pages/7.png"></div>
-        <div class="page"><img loading="lazy" src="pages/8.png"></div>
-        <div class="page"><img loading="lazy" src="pages/9.png"></div>
-        <div class="page"><img loading="lazy" src="pages/10.png"></div>
-        <div class="page"><img loading="lazy" src="pages/11.png"></div>
-        <div class="page"><img loading="lazy" src="pages/12.png"></div>
-        <div class="page"><img loading="lazy" src="pages/13.png"></div>
-        <div class="page"><img loading="lazy" src="pages/14.png"></div>
-        <div class="page"><img loading="lazy" src="pages/15.png"></div>
-        <div class="page"><img loading="lazy" src="pages/16.png"></div>
-        <div class="page"><img loading="lazy" src="pages/17.png"></div>
-        <div class="page"><img loading="lazy" src="pages/18.png"></div>
-        <div class="page"><img loading="lazy" src="pages/19.png"></div>
-        <div class="page"><img loading="lazy" src="pages/20.png"></div>
-        <div class="page"><img loading="lazy" src="pages/21.png"></div>
-        <div class="page"><img loading="lazy" src="pages/22.png"></div>
-        <div class="page"><img loading="lazy" src="pages/23.png"></div>
-        <div class="page"><img loading="lazy" src="pages/24.png"></div>
-        <div class="page"><img loading="lazy" src="pages/25.png"></div>
-        <div class="page"><img loading="lazy" src="pages/26.png"></div>
-        <div class="page"><img loading="lazy" src="pages/27.png"></div>
-        <div class="page"><img loading="lazy" src="pages/28.png"></div>
-        <div class="page"><img loading="lazy" src="pages/29.png"></div>
-        <div class="page"><img loading="lazy" src="pages/30.png"></div>
-        <div class="page"><img loading="lazy" src="pages/31.png"></div>
-        <div class="page"><img loading="lazy" src="pages/32.png"></div>
-        <div class="page"><img loading="lazy" src="pages/33.png"></div>
-        <div class="page"><img loading="lazy" src="pages/34.png"></div>
-        <div class="page"><img loading="lazy" src="pages/35.png"></div>
-        <div class="page"><img loading="lazy" src="pages/36.png"></div>
-        <div class="page"><img loading="lazy" src="pages/37.png"></div>
-        <div class="page"><img loading="lazy" src="pages/38.png"></div>
-        <div class="page"><img loading="lazy" src="pages/39.png"></div>
-        <div class="page"><img loading="lazy" src="pages/40.png"></div>
-        <div class="page"><img loading="lazy" src="pages/41.png"></div>
-        <div class="page"><img loading="lazy" src="pages/42.png"></div>
-        <div class="page"><img loading="lazy" src="pages/43.png"></div>
-        <div class="page"><img loading="lazy" src="pages/44.png"></div>
-        <div class="page"><img loading="lazy" src="pages/45.png"></div>
-        <div class="page"><img loading="lazy" src="pages/46.png"></div>
-        <div class="page"><img loading="lazy" src="pages/47.png"></div>
-        <div class="page"><img loading="lazy" src="pages/48.png"></div>
-        <div class="page"><img loading="lazy" src="pages/49.png"></div>
-        <div class="page"><img loading="lazy" src="pages/50.png"></div>
-        <div class="page"><img loading="lazy" src="pages/51.png"></div>
-        <div class="page"><img loading="lazy" src="pages/52.png"></div>
-        <div class="page"><img loading="lazy" src="pages/53.png"></div>
-        <div class="page"><img loading="lazy" src="pages/54.png"></div>
-        <div class="page"><img loading="lazy" src="pages/55.png"></div>
-        <div class="page"><img loading="lazy" src="pages/56.png"></div>
-        <div class="page"><img loading="lazy" src="pages/57.png"></div>
-        <div class="page"><img loading="lazy" src="pages/58.png"></div>
-        <div class="page"><img loading="lazy" src="pages/59.png"></div>
-        <div class="page"><img loading="lazy" src="pages/60.png"></div>
-        <div class="page"><img loading="lazy" src="pages/61.png"></div>
-        <div class="page"><img loading="lazy" src="pages/62.png"></div>
-        <div class="page"><img loading="lazy" src="pages/63.png"></div>
-        <div class="page"><img loading="lazy" src="pages/64.png"></div>
-        <div class="page"><img loading="lazy" src="pages/65.png"></div>
-        <div class="page"><img loading="lazy" src="pages/66.png"></div>
-        <div class="page"><img loading="lazy" src="pages/67.png"></div>
-        <div class="page"><img loading="lazy" src="pages/68.png"></div>
-        <div class="page"><img loading="lazy" src="pages/69.png"></div>
-        <div class="page"><img loading="lazy" src="pages/70.png"></div>
-        <div class="page"><img loading="lazy" src="pages/71.png"></div>
-        <div class="page"><img loading="lazy" src="pages/72.png"></div>
-        <div class="page"><img loading="lazy" src="pages/73.png"></div>
-        <div class="page"><img loading="lazy" src="pages/74.png"></div>
-        <div class="page"><img loading="lazy" src="pages/75.png"></div>
-        <div class="page"><img loading="lazy" src="pages/76.png"></div>
-        <div class="page"><img loading="lazy" src="pages/77.png"></div>
-        <div class="page"><img loading="lazy" src="pages/78.png"></div>
-        <div class="page"><img loading="lazy" src="pages/79.png"></div>
-        <div class="page"><img loading="lazy" src="pages/80.png"></div>
-        <div class="page"><img loading="lazy" src="pages/81.png"></div>
-        <div class="page"><img loading="lazy" loading="lazy" src="pages/82.png"></div>
-        <div class="page"><img loading="lazy" src="pages/83.png"></div>
-        <div class="page"><img loading="lazy" src="pages/84.png"></div>
-        <div class="page"><img loading="lazy" src="pages/85.png"></div>
-        <div class="page"><img loading="lazy" src="pages/86.png"></div>
-        <div class="page"><img loading="lazy" src="pages/87.png"></div>
-        <div class="page"><img loading="lazy" src="pages/88.png"></div>
-        <div class="page"><img loading="lazy" src="pages/89.png"></div>
-        <div class="page"><img loading="lazy" src="pages/90.png"></div>
-        <div class="page"><img loading="lazy" src="pages/91.png"></div>
-        <div class="page"><img loading="lazy" src="pages/92.png"></div>
-        <div class="page"><img loading="lazy" src="pages/93.png"></div>
-        <div class="page"><img loading="lazy" src="pages/94.png"></div>
-        <div class="page"><img loading="lazy" src="pages/95.png"></div>
-        <div class="page"><img loading="lazy" src="pages/96.png"></div>
-
-
-
-        <div class="hard"><img src="pages/97.png"></div>
-
-      </div>
-
-      <button id="nextBtn">▶</button>
-
-    </div>
-    
-    <button id="fullscreenBtn">Fullscreen</button>
-
-  </section>
-
-  <section class="previous-audri">
-    <h2>Previous Audri's</h2>
-
-    <div class="book-grid">
-      <div class="book"><img src="pages/Audri-21.jpg"></div>
-      <div class="book"><img src="images/Audri_20.jpeg"></div>
-      <div class="book"><img src="images/Audri-23.jpeg"></div>
-      <div class="book"><img src="images/Audri-24.jpeg"></div>
-    </div>
-  </section>
-
-  <section class="wall-magazine">
-    <h2>Wall Magazines</h2>
-
-    <div class="slider-container">
-
-      <button class="arrow left">&#10094;</button>
-
-      <div class="slider" id="wallSlider">
-        <div class="slide"><img src="images/wall-1.jpeg"></div>
-        <div class="slide"><img src="images/wall-1.jpeg"></div>
-        <div class="slide"><img src="images/wall-1.jpeg"></div>
-      </div>
-
-      <button class="arrow right">&#10095;</button>
-
-    </div>
-  </section>
-
-  <script>
-    tsParticles.load("tsparticles", {
-      particles: {
-        number: { value: 18 },
-        color: { value: "#00eaff" },
-        links: {
-          enable: true,
-          color: "#00eaff",
-          distance: 250,
-          opacity: 0.4,
-          width: 2   // thicker strokes
-        },
-        move: {
-          enable: true,
-          speed: 0.6  // slower movement
-        },
-        size: { value: 4 }
-      }
-    });
-  </script>
-
-
-  <script>
-    const slider = document.getElementById("wallSlider");
-    const slides = document.querySelectorAll(".slide");
-    const prev = document.querySelector(".arrow.left");
-    const next = document.querySelector(".arrow.right");
-
-    let index = 0;
-    let startX = 0;
-    let isDragging = false;
-
-    function updateSlide() {
-      slider.style.transform = `translateX(-${index * 100}%)`;
+    /* ── Navbar fallback (overridden by your site CSS) ───── */
+    /* ── Blob background ───────────────────────────────────── */
+    .blob-bg {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+    }
+    .blob {
+      position: absolute; border-radius: 50%;
+      filter: blur(80px); opacity: 0.18;
+      animation: blob-drift 20s ease-in-out infinite alternate;
+    }
+    .blob-1 {
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, #7c3aed, #1e1b4b);
+      top: -10%; left: -8%; animation-duration: 22s;
+    }
+    .blob-2 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, #0ea5e9, #1e3a5f);
+      top: 50%; right: -10%; animation-duration: 18s; animation-delay: -6s;
+    }
+    .blob-3 {
+      width: 450px; height: 450px;
+      background: radial-gradient(circle, #065f46, #0c1a2e);
+      top: 40%; left: 30%; animation-duration: 25s; animation-delay: -10s;
+    }
+    @keyframes blob-drift {
+      from { transform: translate(0,0) scale(1); }
+      to   { transform: translate(40px,-30px) scale(1.12); }
     }
 
-    next.addEventListener("click", () => {
-      index = (index + 1) % slides.length;
-      updateSlide();
-    });
+    /* ── Floating particles ────────────────────────────────── */
+    .particles { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
+    .particle {
+      position: absolute; border-radius: 50%;
+      animation: particle-float linear infinite;
+    }
+    @keyframes particle-float {
+      0%   { transform: translateY(0) translateX(0); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 0.6; }
+      100% { transform: translateY(-80px) translateX(20px); opacity: 0; }
+    }
 
-    prev.addEventListener("click", () => {
-      index = (index - 1 + slides.length) % slides.length;
-      updateSlide();
-    });
+    /* ── Page wrapper ──────────────────────────────────────── */
+    .page-content { position: relative; z-index: 10; padding-top: 72px; }
 
-    // DRAG FUNCTION
-    slider.addEventListener("mousedown", (e) => {
-      isDragging = true;
-      startX = e.pageX;
-      slider.style.cursor = "grabbing";
-    });
+    /* ── Hero ──────────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-cover {
+      position: relative;
+      width: min(300px, 82vw);
+      animation: hero-enter 1.2s cubic-bezier(0.22,1,0.36,1) both;
+    }
+    @keyframes hero-enter {
+      from { opacity: 0; transform: scale(0.85) translateY(30px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .hero-cover img {
+      width: 100%; border-radius: 12px;
+      box-shadow: 0 0 40px rgba(0,212,255,0.2), 0 20px 80px rgba(0,0,0,0.7);
+      border: 1px solid rgba(0,212,255,0.2);
+    }
+    .hero-cover-glow {
+      position: absolute; inset: -8px; border-radius: 16px;
+      background: radial-gradient(ellipse at center, rgba(0,212,255,0.12), transparent 70%);
+      filter: blur(20px); pointer-events: none;
+      animation: glow-pulse 3s ease-in-out infinite;
+    }
+    @keyframes glow-pulse { 0%,100%{opacity:.4} 50%{opacity:.8} }
+    .hero-cover-btn {
+      position: absolute; inset: 0; border-radius: 12px;
+      background: rgba(3,3,12,0); display: flex; align-items: center; justify-content: center;
+      transition: background 0.25s;
+      cursor: pointer;
+    }
+    .hero-cover-btn:hover { background: rgba(3,3,12,0.72); }
+    .hero-cover-btn .btn-inner {
+      opacity: 0; transform: scale(0.88) translateY(6px);
+      transition: opacity 0.22s, transform 0.22s;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      padding: 16px 24px; border-radius: 12px;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.35);
+      box-shadow: 0 0 24px rgba(0,212,255,0.2);
+    }
+    .hero-cover-btn:hover .btn-inner { opacity: 1; transform: scale(1) translateY(0); }
+    .btn-inner svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .btn-inner span { font-size: 11px; font-family: monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
 
-    slider.addEventListener("mouseup", (e) => {
-      if (!isDragging) return;
-      let move = e.pageX - startX;
+    .hero-scroll {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      animation: scroll-fade 1.5s 1.8s both;
+    }
+    @keyframes scroll-fade { from{opacity:0} to{opacity:1} }
+    .hero-scroll svg { animation: bounce 1.5s ease-in-out infinite; stroke: rgba(255,255,255,0.35); fill: none; stroke-width: 2; stroke-linecap: round; }
+    @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
 
-      if (move > 100) {
-        index = (index - 1 + slides.length) % slides.length;
-      } else if (move < -100) {
-        index = (index + 1) % slides.length;
+    /* ── Section base ──────────────────────────────────────── */
+    section { position: relative; z-index: 10; padding: 80px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    /* ── Scroll reveal ─────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.left { transform: translateX(-40px); }
+    .reveal.right { transform: translateX(40px); }
+    .reveal.visible { opacity: 1; transform: translate(0,0); }
+
+    /* ── Section headers ───────────────────────────────────── */
+    .section-label {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+    }
+    .section-label svg { width: 18px; height: 18px; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .section-label span {
+      font-size: 11px; font-family: monospace; letter-spacing: .14em; text-transform: uppercase;
+    }
+    .section-divider {
+      height: 1px; flex: 1; opacity: 0.2;
+      background: linear-gradient(90deg, var(--accent), transparent);
+    }
+
+    /* ── Description section ───────────────────────────────── */
+    .desc-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    }
+    @media (max-width: 768px) { .desc-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    .desc-title {
+      font-size: clamp(24px,3.5vw,40px); font-weight: 900;
+      text-transform: uppercase; letter-spacing: .03em; line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .desc-body { font-size: 15px; line-height: 1.75; opacity: 0.72; margin-bottom: 28px; }
+    .topics { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .topic-tag {
+      padding: 4px 12px; border-radius: 999px;
+      font-size: 11px; font-family: monospace; letter-spacing: .1em; text-transform: uppercase;
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.3);
+      color: var(--accent);
+    }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 28px; border-radius: 999px;
+      font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      background: rgba(0,212,255,0.12);
+      border: 1px solid rgba(0,212,255,0.45);
+      color: var(--accent);
+      box-shadow: 0 0 20px rgba(0,212,255,0.15);
+      transition: box-shadow 0.25s, transform 0.2s;
+      cursor: pointer;
+    }
+    .cta-btn:hover { box-shadow: 0 0 36px rgba(0,212,255,0.45); transform: scale(1.04); }
+    .cta-btn svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; }
+
+    .desc-cover { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    .desc-cover-img {
+      width: min(240px, 70vw); border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0,212,255,0.15), 0 12px 50px rgba(0,0,0,0.6);
+      border: 1px solid rgba(0,212,255,0.2);
+      cursor: pointer; transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .desc-cover-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 50px rgba(0,212,255,0.3), 0 16px 60px rgba(0,0,0,0.7);
+    }
+
+    /* ── Logo cards ────────────────────────────────────────── */
+    .logo-cards { display: flex; gap: 14px; width: 100%; max-width: 280px; }
+    .logo-card {
+      flex: 1; display: flex; flex-direction: column; align-items: center;
+      gap: 8px; padding: 12px; border-radius: 12px; text-align: center;
+    }
+    .logo-card-img {
+      width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .logo-card-img img { width: 100%; height: 100%; object-fit: contain; }
+    .logo-card-name { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; line-height: 1.3; }
+    .logo-card-desc { font-size: 10px; opacity: 0.45; line-height: 1.4; }
+
+    /* ── Previous publications ─────────────────────────────── */
+    .prev-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 20px; margin-top: 40px;
+    }
+    .pub-card {
+      position: relative; border-radius: 10px; overflow: hidden;
+      aspect-ratio: 2.3/3; cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .pub-card:hover { transform: translateY(-8px) scale(1.02); }
+    .pub-card-img { width: 100%; height: 100%; object-fit: cover; }
+    .pub-card-gradient {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.85));
+    }
+    .pub-card-info {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 10px;
+    }
+    .pub-card-year { font-size: 9px; font-family: monospace; opacity: 0.6; letter-spacing: .1em; text-transform: uppercase; }
+    .pub-card-title { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; line-height: 1.2; }
+
+    /* ── Wall magazine ─────────────────────────────────────── */
+    .wall-frame {
+      background: linear-gradient(135deg, rgba(15,15,30,0.92), rgba(10,20,40,0.97));
+      border: 1px solid rgba(52,211,153,0.18);
+      border-radius: 24px; padding: 48px 32px;
+      display: flex; flex-direction: column; align-items: center; gap: 32px;
+      margin-top: 40px;
+      box-shadow: 0 0 80px rgba(52,211,153,0.04) inset;
+      position: relative; overflow: hidden;
+    }
+    .wall-grid-bg {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.04;
+      background-image:
+        linear-gradient(#228dcfa8 1px, transparent 1px),
+        linear-gradient(90deg, #228dcfa8 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .wall-mag-card {
+      position: relative; cursor: pointer;
+      width: min(480px, 70vh);
+      height: 40vh;
+    }
+    .wall-mag-pin {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      width: 16px; height: 16px; border-radius: 50%; z-index: 2;
+      background: var(--green);
+      box-shadow: 0 0 14px var(--green);
+    }
+    .wall-mag-pin::after {
+      content: ''; position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
+      width: 1px; height: 16px; background: #228dcfa8;
+    }
+    .wall-mag-img-wrap {
+      border-radius: 8px; overflow: hidden; margin-top: 12px;
+      border: 1px solid #228dcf48;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.65), 0 0 20px rgba(52,211,153,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .wall-mag-card:hover .wall-mag-img-wrap {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.75), 0 0 30px rgba(52,211,153,0.15);
+    }
+    .wall-mag-img-wrap img { width: 100%; aspect-ratio: 16/11; object-fit: cover; }
+    .wall-mag-placeholder {
+      width: 100%; aspect-ratio: 16/11;
+      background: linear-gradient(135deg, #0d1f2d, #0d2b1e);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    }
+    .wall-mag-placeholder svg { width: 32px; height: 32px; stroke: var(--green); fill: none; stroke-width: 1.5; opacity: 0.5; }
+    .wall-mag-placeholder span { font-size: 10px; font-family: monospace; letter-spacing: .1em; text-transform: uppercase; opacity: 0.35; color: var(--green); }
+    .wall-hover-hint {
+      position: absolute; inset: 12px 0 0; border-radius: 8px;
+      background: rgba(3,3,12,0); display: flex; align-items: center; justify-content: center;
+      transition: background 0.25s;
+    }
+    .wall-mag-card:hover .wall-hover-hint { background: rgba(3,3,12,0.7); }
+    .wall-hover-hint-inner {
+      opacity: 0; transform: scale(0.85);
+      transition: opacity 0.2s, transform 0.2s;
+      padding: 8px 16px; border-radius: 8px;
+      background: rgba(52,211,153,0.12);
+      border: 1px solid #238bcb;
+      font-size: 10px; font-family: monospace; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--green);
+    }
+    .wall-mag-card:hover .wall-hover-hint-inner { opacity: 1; transform: scale(1); }
+    .wall-caption {
+      font-size: 11px; font-family: monospace; letter-spacing: .12em;
+      text-transform: uppercase; opacity: 0.28; color: var(--accent); text-align: center;
+    }
+
+    /* ── Footer ────────────────────────────────────────────── */
+    footer {
+      position: relative; z-index: 10; text-align: center;
+      padding: 28px 24px; border-top: 1px solid rgba(99,102,241,0.1);
+    }
+    footer p { font-size: 11px; font-family: monospace; letter-spacing: .12em; text-transform: uppercase; opacity: 0.28; }
+
+    /* ── Modal base ────────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed; inset: 0; z-index: 200;
+      background: rgba(3,3,12,0.97); backdrop-filter: blur(28px);
+      display: none; flex-direction: column; align-items: center; justify-content: center;
+      animation: modal-in 0.3s ease both;
+    }
+    .modal-overlay.open { display: flex; }
+    @keyframes modal-in { from{opacity:0} to{opacity:1} }
+
+    /* ── Flipbook modal ────────────────────────────────────── */
+    .flipbook-header {
+      position: absolute; top: 0; left: 0; right: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px; border-bottom: 1px solid rgba(0,212,255,0.12); z-index: 10;
+    }
+    .flipbook-header-title {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 11px; font-family: monospace; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--accent);
+    }
+    .flipbook-header-title svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .flipbook-page-num { font-size: 11px; font-family: monospace; opacity: 0.3; letter-spacing: .1em; }
+    .modal-close-btn {
+      width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.6); display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, color 0.2s;
+      position:relative;
+      top:9.9vh;
+    }
+    .modal-close-btn:hover { background: rgba(255,255,255,0.14); color: #fff; }
+    .modal-close-btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; }
+
+    .flipbook-body { margin-top: 60px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+
+    .book {
+      position: relative; display: flex;
+      box-shadow: 0 40px 120px rgba(0,0,0,0.9), 0 0 60px rgba(0,212,255,0.05);
+      border-radius: 6px;
+    }
+    .book-page {
+      width: var(--page-w); height: var(--page-h);
+      overflow: hidden; background: #0a0a1a; position: relative;
+    }
+    .book-page.left {
+      border-radius: 6px 0 0 6px;
+      box-shadow: inset -3px 0 12px rgba(0,0,0,0.6);
+    }
+    .book-page.right {
+      border-radius: 0 6px 6px 0;
+      box-shadow: inset 3px 0 12px rgba(0,0,0,0.5);
+    }
+    .book-page img { width: 100%; height: 100%; object-fit: cover; }
+    .book-page .page-empty {
+      width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; opacity: 0.08;
+    }
+    .book-page .page-empty svg { width: 40px; height: 40px; stroke: var(--accent); fill: none; stroke-width: 1.5; }
+    .book-spine {
+      width: 3px; flex-shrink: 0; z-index: 5;
+      background: linear-gradient(to bottom, rgba(0,212,255,0.2), rgba(0,212,255,0.5), rgba(0,212,255,0.2));
+      box-shadow: 0 0 16px rgba(0,212,255,0.3);
+    }
+    .page-shadow-left {
+      position: absolute; top: 0; right: 0; width: 40px; height: 100%;
+      background: linear-gradient(to right, transparent, rgba(0,0,0,0.45));
+      pointer-events: none;
+    }
+    .page-shadow-right {
+      position: absolute; top: 0; left: 0; width: 40px; height: 100%;
+      background: linear-gradient(to left, transparent, rgba(0,0,0,0.45));
+      pointer-events: none;
+    }
+    .book-tap-left {
+      position: absolute; top: 0; left: 0; height: 100%; width: 40%; z-index: 20; cursor: pointer;
+    }
+    .book-tap-right {
+      position: absolute; top: 0; right: 0; height: 100%; width: 40%; z-index: 20; cursor: pointer;
+    }
+
+    /* Flip overlay animation */
+    .flip-overlay {
+      position: absolute; top: 0; overflow: hidden; z-index: 30;
+      transition: transform 0.33s ease-in;
+    }
+    .flip-overlay.flip-next {
+      right: 0; width: var(--page-w); height: var(--page-h);
+      transform-origin: left center;
+      border-radius: 0 6px 6px 0;
+      background: #0c0c1e;
+    }
+    .flip-overlay.flip-prev {
+      left: 0; width: var(--page-w); height: var(--page-h);
+      transform-origin: right center;
+      border-radius: 6px 0 0 6px;
+      background: #0a0a1a;
+    }
+    .flip-overlay img { width: 100%; height: 100%; object-fit: cover; }
+
+    .flipbook-controls {
+      display: flex; align-items: center; gap: 20px;
+    }
+    .flip-btn {
+      width: 42px; height: 42px; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .flip-btn:not(:disabled) { background: rgba(0,212,255,0.12); border: 1px solid rgba(0,212,255,0.35); color: var(--accent); }
+    .flip-btn:not(:disabled):hover { background: rgba(0,212,255,0.25); transform: scale(1.1); }
+    .flip-btn:disabled { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.2); cursor: default; }
+    .flip-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .spread-counter { font-size: 11px; font-family: monospace; opacity: 0.3; letter-spacing: .1em; min-width: 60px; text-align: center; }
+    .flipbook-hint { font-size: 10px; font-family: monospace; opacity: 0.18; letter-spacing: .12em; text-transform: uppercase; }
+
+    /* ── Image lightbox ────────────────────────────────────── */
+    .lightbox-inner {
+      position: relative; max-width: 90vw; max-height: 90vh;
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .lightbox-inner img {
+      max-width: 90vw; max-height: 80vh;
+      border-radius: 8px;
+      box-shadow: 0 30px 100px rgba(0,0,0,0.9), 0 0 40px rgba(52,211,153,0.1);
+      border: 1px solid rgba(52,211,153,0.2);
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute; top: -50px; right: 0;
+    }
+
+    /* ── Responsive ────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      :root { --page-w: min(150px, 44vw); --page-h: min(220px, 65vw); }
+      section { padding: 60px 16px; }
+      .book { transform: scale(0.95); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Blob background -->
+  <div class="blob-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ── Page content ─────────────────────────────────────── -->
+  <main class="page-content">
+
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-cover">
+        <div class="hero-cover-glow"></div>
+        <!--
+          AUDRI cover image.
+          Replace "Audri-24.jpeg" with your image filename.
+          The image must be in the same folder as this HTML file.
+        -->
+        <img src="images/Audri-24.jpeg" alt="AUDRI Magazine Cover" id="heroCoverImg">
+        <div class="hero-cover-btn" id="heroCoverBtn">
+          <div class="btn-inner">
+            <svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            <span>View Full Screen</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <svg viewBox="0 0 24 24" width="22" height="22"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </section>
+
+    <!-- ── DESCRIPTION ───────────────────────────────────────── -->
+    <section>
+      <div class="container">
+        <div class="desc-grid">
+
+          <!-- Left: text -->
+          <div class="reveal left">
+            <div class="section-label" style="color: var(--accent)">
+              <svg viewBox="0 0 24 24" style="stroke:var(--accent)"><path d="M9 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M9 2v6h6"/></svg>
+              <span style="color:var(--accent)">Inside This Issue</span>
+            </div>
+            <h2 class="desc-title">AUDRI</h2>
+            <p class="desc-body">
+              Audri, the annual science publication of the Notre Dame Science Club, is a vibrant
+              reflection of the curiosity, passion, and intellectual spirit of the science-minded
+              students of Notre Dame College. More than a collection of student writings, it serves
+              as a platform where research, analysis, and innovative ideas extend beyond the classroom
+              to reach a wider audience. Celebrating science as a continuous journey of discovery,
+              Audri encourages critical thinking, creativity, and free expression.
+            </p>
+            <div class="topics">
+              <span class="topic-tag">Quantum Entanglement</span>
+              <span class="topic-tag">Time Travel</span>
+              <span class="topic-tag">CRISPR 3.0</span>
+              <span class="topic-tag">Neural Networks</span>
+              <span class="topic-tag">Exoplanet Atmospheres</span>
+            </div>
+            <button class="cta-btn" id="openFlipbookBtn">
+              <svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+              View Full Screen
+            </button>
+          </div>
+
+          <!-- Right: cover + logos -->
+          <div class="desc-cover reveal right">
+            <img class="desc-cover-img" src="images/Audri-24.jpeg" alt="AUDRI Cover" id="descCoverBtn">
+
+            <!-- Partner logos -->
+            <div class="logo-cards">
+              <!--
+                To customise logos:
+                  • Replace "club-logo.jpg" / "college-logo.png" with your image paths
+                  • Update name and description text
+              -->
+              <div class="logo-card" style="background:rgba(0,212,255,0.06); border:1px solid rgba(0,212,255,0.2)">
+                <div class="logo-card-img" style="background:rgba(0,212,255,0.15); border:1px solid rgba(0,212,255,0.35)">
+                  <img src="images/cropped-logo.png" alt="Notre Dame Science Club" onerror="this.style.display='none'">
+                </div>
+                <span class="logo-card-name" style="color:var(--accent)">Notre Dame Science Club</span>
+                <span class="logo-card-desc">Since 1956</span>
+              </div>
+              <div class="logo-card" style="background:rgba(167,139,250,0.06); border:1px solid rgba(167,139,250,0.2)">
+                <div class="logo-card-img" style="background:rgba(167,139,250,0.15); border:1px solid rgba(167,139,250,0.35)">
+                  <img src="images/college_logo.svg" alt="Notre Dame College" onerror="this.style.display='none'">
+                </div>
+                <span class="logo-card-name" style="color:var(--purple)">Notre Dame College</span>
+                <span class="logo-card-desc">Dhaka</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PREVIOUS PUBLICATIONS ─────────────────────────────── -->
+    <section>
+      <div class="container">
+        <div class="section-label reveal" style="color:#a78bfa; margin-bottom:12px">
+          <svg viewBox="0 0 24 24" style="stroke:#a78bfa"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span style="color:#a78bfa; font-size:11px; font-family:monospace; letter-spacing:.14em; text-transform:uppercase">Previous Publications</span>
+          <div class="section-divider" style="background:linear-gradient(90deg,#a78bfa,transparent)"></div>
+        </div>
+
+        <!--
+          PREVIOUS PUBLICATIONS GRID
+          ─────────────────────────────────────────────────────────
+          To add a previous issue, duplicate a .pub-card block.
+          • Set the <img src="..."> to your cover image path.
+          • Update year and title text.
+          • If no image, remove <img> and the gradient overlay — the
+            gradient background will show instead.
+          ─────────────────────────────────────────────────────────
+        -->
+        <div class="prev-grid reveal">
+
+          <div class="pub-card" style="background:linear-gradient(135deg,#064e3b,#065f46); border:1px solid rgba(0,255,163,0.2); box-shadow:0 0 20px rgba(0,255,163,0.08), 0 8px 40px rgba(0,0,0,0.6)">
+            <img class="pub-card-img" src="images/Audri-23.jpeg" alt="">
+            <div class="pub-card-gradient"></div>
+            <div class="pub-card-info">
+              <div class="pub-card-year" style="color:#00ffa3">2024</div>
+              <div class="pub-card-title">Audri 2023-24</div>
+            </div>
+          </div>
+
+          <div class="pub-card" style="background:linear-gradient(135deg,#7f1d1d,#7c2d12); border:1px solid rgba(255,107,107,0.2); box-shadow:0 0 20px rgba(255,107,107,0.08), 0 8px 40px rgba(0,0,0,0.6)">
+            <div class="pub-card-gradient"></div>
+            <img class="pub-card-img" src="images/Audri_20.jpeg" alt="">
+            <div class="pub-card-info">
+              <div class="pub-card-year" style="color:#e040fb">2023</div>
+              <div class="pub-card-title">Audri 2022-23</div>
+            </div>
+          </div>
+<!--
+          <div class="pub-card" style="background:linear-gradient(135deg,#78350f,#713f12); border:1px solid rgba(255,215,0,0.2); box-shadow:0 0 20px rgba(255,215,0,0.08), 0 8px 40px rgba(0,0,0,0.6)">
+            <div class="pub-card-gradient"></div>
+            <img class="pub-card-img" src="images/audri" alt="">
+
+            <div class="pub-card-info">
+              <div class="pub-card-year" style="color:#ffd700">2022</div>
+              <div class="pub-card-title">Audri 2021-22</div>
+            </div>
+          </div>
+
+          <div class="pub-card" style="background:linear-gradient(135deg,#0c1a2e,#1e3a5f); border:1px solid rgba(79,195,247,0.2); box-shadow:0 0 20px rgba(79,195,247,0.08), 0 8px 40px rgba(0,0,0,0.6)">
+            <div class="pub-card-gradient"></div>
+            <div class="pub-card-info">
+              <div class="pub-card-year" style="color:#4fc3f7">2024</div>
+              <div class="pub-card-title">Deep Space Protocol</div>
+            </div>
+          </div>
+
+          <div class="pub-card" style="background:linear-gradient(135deg,#14532d,#1a3300); border:1px solid rgba(118,255,3,0.2); box-shadow:0 0 20px rgba(118,255,3,0.08), 0 8px 40px rgba(0,0,0,0.6)">
+            <div class="pub-card-gradient"></div>
+            <div class="pub-card-info">
+              <div class="pub-card-year" style="color:#76ff03">2023</div>
+              <div class="pub-card-title">Climate Codex</div>
+            </div>
+          </div>
+
+          <div class="pub-card" style="background:linear-gradient(135deg,#4a044e,#831843); border:1px solid rgba(224,64,251,0.2); box-shadow:0 0 20px rgba(224,64,251,0.08), 0 8px 40px rgba(0,0,0,0.6)">
+            <div class="pub-card-gradient"></div>
+            <div class="pub-card-info">
+              <div class="pub-card-year" style="color:#e040fb">2023</div>
+              <div class="pub-card-title">Particle Dreams</div>
+            </div>
+          </div>
+        -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WALL MAGAZINE ─────────────────────────────────────── -->
+    <section>
+      <div class="container">
+        <div class="section-label reveal" style="margin-bottom:6px">
+          <svg viewBox="0 0 24 24" style="stroke:var(--green)"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span style="color:var(--green); font-size:11px; font-family:monospace; letter-spacing:.14em; text-transform:uppercase">Wall Magazine</span>
+          <div class="section-divider" style="background:linear-gradient(90deg,var(--green),transparent)"></div>
+        </div>
+        <p class="reveal" style="font-size:13px; opacity:.45; margin-bottom:0; padding-left:28px">
+          Our physical wall display — click to view the full spread.
+        </p>
+
+        <div class="wall-frame reveal">
+          <div class="wall-grid-bg"></div>
+
+          <!--
+            WALL MAGAZINE
+            ──────────────────────────────────────────────────────
+            Replace "wall-magazine.jpg" with your magazine JPEG path.
+            The image must be in the same folder as this HTML file.
+            ──────────────────────────────────────────────────────
+          -->
+          <div class="wall-mag-card" id="wallMagCard">
+            <div class="wall-mag-pin"></div>
+            <div class="wall-mag-img-wrap">
+              <img src="images/wall-1.jpeg" alt="Wall Magazine"
+                   onerror="this.parentElement.innerHTML='<div class=wall-mag-placeholder><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><line x1=\'3\' y1=\'9\' x2=\'21\' y2=\'9\'/></svg><span>wall-magazine.jpg</span></div>'">
+            </div>
+            <div class="wall-hover-hint">
+              <span class="wall-hover-hint-inner">View Image</span>
+            </div>
+          </div>
+
+          <p class="wall-caption">Physical display · Club Room B14 · Updated Quarterly</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Notre Dame Science Club · Developed by Samin Sakur · <span id="currentYear"></span></p>
+  </footer>
+
+  <!-- ── FLIPBOOK MODAL ────────────────────────────────────────── -->
+  <div class="modal-overlay" id="flipbookModal">
+    <div class="flipbook-header">
+      <div class="flipbook-header-title">
+        <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        AUDRI · April 2026
+      </div>
+      <span class="flipbook-page-num" id="flipbookPageNum">1 — 97</span>
+      <button class="modal-close-btn" id="closeFlipbook">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="flipbook-body">
+      <div class="book" id="book">
+        <div class="book-page left" id="leftPage">
+          <div class="page-shadow-left"></div>
+          <div class="page-empty">
+            <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-page right" id="rightPage">
+          <div class="page-shadow-right"></div>
+        </div>
+        <!-- Tap zones -->
+        <div class="book-tap-left" id="tapLeft"></div>
+        <div class="book-tap-right" id="tapRight"></div>
+      </div>
+
+      <div class="flipbook-controls">
+        <button class="flip-btn" id="prevBtn" disabled>
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <span class="spread-counter" id="spreadCounter">0 / 48</span>
+        <button class="flip-btn" id="nextBtn">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <p class="flipbook-hint">← → Arrow keys · Click edges · Esc to close</p>
+    </div>
+  </div>
+
+  <!-- ── IMAGE LIGHTBOX ────────────────────────────────────────── -->
+  <div class="modal-overlay" id="lightboxModal" style="cursor:zoom-out" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="modal-close-btn lightbox-close" onclick="closeLightbox()">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img id="lightboxImg" src="" alt="Wall Magazine">
+    </div>
+  </div>
+
+  <!-- ── Scripts ─────────────────────────────────────────────── -->
+  <script src="js/nav.js"></script>
+  <script>
+    /* ── Year ── */
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    /* ── Particles ──────────────────────────────────────────── */
+    (function() {
+      const container = document.getElementById('particles');
+      const colors = ['#00d4ff', '#a78bfa', '#34d399'];
+      for (let i = 0; i < 40; i++) {
+        const el = document.createElement('div');
+        el.className = 'particle';
+        const size = 1.5 + Math.random() * 2.5;
+        const color = colors[i % 3];
+        el.style.cssText = `
+          width:${size}px; height:${size}px;
+          left:${Math.random()*100}%;
+          top:${Math.random()*100}%;
+          background:${color};
+          box-shadow:0 0 ${size*3}px ${color};
+          animation-duration:${8+Math.random()*14}s;
+          animation-delay:${Math.random()*6}s;
+        `;
+        container.appendChild(el);
+      }
+    })();
+
+    /* ── Scroll reveal ──────────────────────────────────────── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '-60px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    /* ── Flipbook ───────────────────────────────────────────── */
+    const TOTAL_PAGES = 97;
+    const MAX_SPREAD = Math.floor(TOTAL_PAGES / 2);
+    let spread = 0;
+    let flipping = false;
+
+    function getPages(s) {
+      if (s === 0) return { left: null, right: 1 };
+      const l = s * 2, r = l + 1;
+      return { left: l <= TOTAL_PAGES ? l : null, right: r <= TOTAL_PAGES ? r : null };
+    }
+
+    function renderBook() {
+      const p = getPages(spread);
+      const leftPage = document.getElementById('leftPage');
+      const rightPage = document.getElementById('rightPage');
+
+      if (p.left) {
+        leftPage.innerHTML = `<img src="pages/${p.left}.png" loading="lazy"><div class="page-shadow-left"></div>`;
+      } else {
+        leftPage.innerHTML = `<div class="page-empty"><svg viewBox="0 0 24 24" style="width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="page-shadow-left"></div>`;
+      }
+      if (p.right) {
+        rightPage.innerHTML = `<img src="pages/${p.right}.png" loading="lazy"><div class="page-shadow-right"></div>`;
+      } else {
+        rightPage.innerHTML = `<div class="page-empty"><svg viewBox="0 0 24 24" style="width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="page-shadow-right"></div>`;
       }
 
-      updateSlide();
-      isDragging = false;
-      slider.style.cursor = "grab";
+      document.getElementById('prevBtn').disabled = spread <= 0;
+      document.getElementById('nextBtn').disabled = spread >= MAX_SPREAD;
+      document.getElementById('spreadCounter').textContent = `${spread} / ${MAX_SPREAD}`;
+      document.getElementById('flipbookPageNum').textContent = `${getPages(spread).left ?? 1} — ${TOTAL_PAGES}`;
+
+      // Preload next spread images
+      const np = getPages(spread + 1);
+      if (np.left) { const i = new Image(); i.src = `pages/${np.left}.png`; }
+      if (np.right) { const i = new Image(); i.src = `pages/${np.right}.png`; }
+    }
+
+    function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+    async function doFlip(dir) {
+      if (flipping) return;
+      if (dir === 'next' && spread >= MAX_SPREAD) return;
+      if (dir === 'prev' && spread <= 0) return;
+      flipping = true;
+
+      const cur = getPages(spread);
+      const nxt = getPages(spread + (dir === 'next' ? 1 : -1));
+      const book = document.getElementById('book');
+
+      const overlay = document.createElement('div');
+      overlay.className = `flip-overlay flip-${dir}`;
+      const frontPage = dir === 'next' ? cur.right : cur.left;
+      const backPage  = dir === 'next' ? nxt.left  : nxt.right;
+
+      if (frontPage) {
+        const img = document.createElement('img');
+        img.src = `pages/${frontPage}.png`;
+        overlay.appendChild(img);
+      }
+      book.appendChild(overlay);
+
+      // Phase 1: fold toward spine (ease-in)
+      await sleep(20);
+      overlay.style.transition = 'transform 0.33s ease-in';
+      overlay.style.transform = dir === 'next'
+        ? 'perspective(2500px) rotateY(-90deg)'
+        : 'perspective(2500px) rotateY(90deg)';
+
+      await sleep(340);
+
+      // Swap content for back face
+      overlay.innerHTML = '';
+      if (backPage) {
+        const img = document.createElement('img');
+        img.src = `pages/${backPage}.png`;
+        img.style.transform = 'scaleX(-1)';
+        overlay.appendChild(img);
+      }
+
+      // Phase 2: unfold to other side (ease-out)
+      overlay.style.transition = 'transform 0.33s ease-out';
+      overlay.style.transform = dir === 'next'
+        ? 'perspective(2500px) rotateY(-180deg)'
+        : 'perspective(2500px) rotateY(180deg)';
+
+      await sleep(340);
+      overlay.remove();
+      spread += dir === 'next' ? 1 : -1;
+      renderBook();
+      flipping = false;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => doFlip('prev'));
+    document.getElementById('nextBtn').addEventListener('click', () => doFlip('next'));
+    document.getElementById('tapLeft').addEventListener('click', () => doFlip('prev'));
+    document.getElementById('tapRight').addEventListener('click', () => doFlip('next'));
+
+    /* Keyboard navigation */
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('flipbookModal').classList.contains('open')) return;
+      if (e.key === 'ArrowRight') doFlip('next');
+      else if (e.key === 'ArrowLeft') doFlip('prev');
+      else if (e.key === 'Escape') closeFlipbook();
     });
 
-    slider.addEventListener("mouseleave", () => {
-      isDragging = false;
-      slider.style.cursor = "grab";
+    /* ── Open / close flipbook ──────────────────────────────── */
+    function openFlipbook() {
+      spread = 0;
+      renderBook();
+      document.getElementById('flipbookModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeFlipbook() {
+      document.getElementById('flipbookModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('heroCoverBtn').addEventListener('click', openFlipbook);
+    document.getElementById('openFlipbookBtn').addEventListener('click', openFlipbook);
+    document.getElementById('descCoverBtn').addEventListener('click', openFlipbook);
+    document.getElementById('closeFlipbook').addEventListener('click', closeFlipbook);
+
+    /* ── Image lightbox ─────────────────────────────────────── */
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    /* Wall magazine card → lightbox */
+    document.getElementById('wallMagCard').addEventListener('click', function() {
+      const img = this.querySelector('img');
+      if (img) openLightbox(img.src);
     });
   </script>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@master/turn.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
-
-  <script src="js/flip.js"></script>
-
-  <audio id="pageSound" src="audio/flip.mp3"></audio>
 </body>
-
-<footer>
-  © 2025 Science Club. All rights reserved.
-</footer>
-
 </html>

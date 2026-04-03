@@ -107,47 +107,6 @@
 .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* .mobile-nav {
-  display: flex;
-  position: fixed;
-  inset: 0;
-  background: rgba(4, 7, 24, 0.97);
-  backdrop-filter: blur(24px);
-  z-index: 8999;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.35s ease, visibility 0.35s ease;
-} 
-
-.mobile-nav.open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-.mobile-nav a {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(180,235,255,0.75);
-  text-decoration: none;
-  transition: color 0.3s, text-shadow 0.3s;
-}
-
-.mobile-nav a:hover,
-.mobile-nav a.active {
-  color: #00e8ff;
-  text-shadow: 0 0 20px #00e8ff;
-}
-
-*/
 /* The Mobile Sidebar Container */
 #mobileNav {
   position: fixed;
