@@ -79,7 +79,9 @@ display:block;
 /* TABLET */
 
 @media (max-width:680px){
-
+iframe{
+  height: 33vh;
+}
 .header-container{
 gap:20px;
 }
@@ -105,6 +107,9 @@ width:50px;
 .header{
 top:20px;
 }
+  iframe{
+    height: 10vh;
+  }
 
 .header-container{
 padding:0 20px;
@@ -1428,6 +1433,9 @@ body {
 @media (max-width: 900px) {
   .video-container {
     flex-direction: column;
+  }
+  iframe{
+    height: 44vh;
   }
   .video-main {
     min-width: unset;
