@@ -1564,3 +1564,57 @@ body {
 .hero {
   padding-top: 80px;
 }
+
+/* ===== Lightbox ===== */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.lightbox-modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1001;
+}
+
+.lightbox-close:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+}

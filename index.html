@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science Club</title>
+  <title>Notre Dame Science Club</title>
+  <link rel="shortcut icon" href="images/cropped-logo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
   <link
@@ -92,17 +93,17 @@
 
       <div class="video-side">
 
-        <div class="video-item">
+        <div class="video-item" id="vidItem1">
           <img src="images/vid-1.jpg">
           <p>Holographic Universe Theory</p>
         </div>
 
-        <div class="video-item">
+        <div class="video-item" id="vidItem2">
           <img src="images/vid-2.jpg">
           <p>Epigenetic Memory</p>
         </div>
 
-        <div class="video-item">
+        <div class="video-item" id="vidItem3">
           <img src="images/vid-3.jpg">
           <p>Are We Alone in the Universe?</p>
         </div>
@@ -459,6 +460,22 @@
     </div>
   </div>
 
+  <!--Image Lightbox-->
+  <div class="modal-overlay" id="lightboxModal" style="cursor:zoom-out" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="modal-close-btn lightbox-close" onclick="closeLightbox()">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img id="lightboxImg" src="" alt="Post">
+    </div>
+  </div>
+  <!-- Lightbox Modal
+  <div id="lightboxModal" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" class="lightbox-content" src="">
+  </div> -->
+
+
   <script>
     const descriptions = {
       administration: `
@@ -629,8 +646,38 @@
         }, 1000)
 
       }, 4500)
-
+      
     })
+    /* ── Image lightbox ─────────────────────────────────────── */
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    /* Video items → lightbox */
+    document.querySelectorAll('.video-item').forEach(item => {
+      item.addEventListener('click', function() {
+        const img = this.querySelector('img');
+        if (img) openLightbox(img.src);
+      });
+    });
+
+     /* Lightbox close button */
+     document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+     
+     /* Close lightbox when clicking outside the image */
+     document.getElementById('lightboxModal').addEventListener('click', function(e) {
+       if (e.target === this) closeLightbox();
+     });
+
   </script>
 
   <script src="js/warp-loader.js"></script>
