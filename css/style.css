@@ -169,7 +169,7 @@ gap:60px;
 /* TEXT */
 
 .hero-text{
-max-width:520px;
+max-width:60vh;
 }
 
 .hero-text h1{
@@ -192,6 +192,7 @@ margin-top:10px;
 font-size:16px;
 line-height:1.8;
 color:#4cc4ff;
+opacity: .75;
 }
 
 /* PLANET */
@@ -245,7 +246,119 @@ font-size:15px;
 }
 
 }
+body {
+  background: radial-gradient(circle at top, #050816, #02030a);
+  font-family: 'Segoe UI', sans-serif;
+}
 
+/* Container */
+.social-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 30px;
+}
+i.fa{
+
+}
+/* Base Button */
+.btn {
+  position: relative;
+  padding: 14px 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  backdrop-filter: blur(6px);
+}
+
+/* Glow layer */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+/* Inner shine */
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* FACEBOOK */
+.facebook {
+  background: linear-gradient(135deg, #0db2e5, #1b2cff, #091a3a);
+}
+.fest-btn {
+  background: linear-gradient(135deg, #0d7de5, #d11bff, #b81e40);
+  animation: gradientShift 6s ease infinite;
+  font-family: "Orbitron", sans-serif;
+}
+.fest-btn:hover {
+  border-color: #9c30fe;
+  /* Animation triggered on hover */
+  animation: glow-pulse 1.5s infinite;
+}
+
+/* Keyframes for the pulsing effect */
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(202, 16, 202, 0.5), 0 0 10px rgba(201, 11, 90, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(156, 48, 254, 0.7), 0 0 30px rgba(156, 48, 254, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(218, 14, 173, 0.5), 0 0 10px rgba(4, 177, 177, 0.3);
+  }
+}
+.facebook::before {
+  background: linear-gradient(135deg, #0db2e5, #4facfe);
+}
+
+/* INSTAGRAM */
+.instagram {
+  background: linear-gradient(135deg, #0db2e5, #a855f7, #ff2e88);
+}
+
+.instagram::before {
+  background: linear-gradient(135deg, #0db2e5, #ff2e88, #a855f7);
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.btn:hover::before {
+  opacity: 1;
+  filter: blur(18px);
+}
+
+/* Animated gradient (optional) */
+.instagram,
+.facebook,
+.fest-btn {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 /* ===================== */
 /* MOBILE */
 /* ===================== */
@@ -1242,7 +1355,7 @@ width:70px;
 .strength-box:hover,
 .event-card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 20px cyan, 0 0 40px rgba(0,255,255,0.5);
+  box-shadow: 0 0 10px rgba(159, 27, 211, 0.541), 0 0 40px rgba(61, 162, 230, 0.5);
 }
 
 /* Section reveal */
