@@ -151,6 +151,8 @@ justify-content:center;
 position:relative;
 padding:0 60px;
 overflow:hidden;
+padding-right: 20vh;
+padding-left: 20vh;
 }
 
 /* CONTAINER */
@@ -198,9 +200,6 @@ opacity: .75;
 /* PLANET */
 
 .hero-planet{
-position:absolute;
-right:8%;
-top:36%;
 width:300px;
 height:300px;
 border-radius:50%;
@@ -212,6 +211,7 @@ box-shadow:
 inset -40px 0 60px rgba(0,0,0,0.8);
 
 animation:rotatePlanet 40s linear infinite;
+flex-shrink:0;
 }
 
 @keyframes rotatePlanet{
@@ -258,9 +258,7 @@ body {
   justify-content: left;
   margin-top: 30px;
 }
-i.fa{
 
-}
 /* Base Button */
 .btn {
   position: relative;
@@ -301,11 +299,18 @@ i.fa{
 .facebook {
   background: linear-gradient(135deg, #0db2e5, #1b2cff, #091a3a);
 }
+.linkedin {
+  background: linear-gradient(135deg, #0077b5, #00a0dc, #005a87);
+}
+
 .fest-btn {
   margin-top:20px;
   background: linear-gradient(135deg, #0d7de5, #d11bff, #b81e40);
   animation: gradientShift 6s ease infinite;
   font-family: "Orbitron", sans-serif;
+  padding: 10px 12px;
+  font-size: 10pt;
+  width: min(220px, 100%);
 }
 .fest-btn:hover {
   border-color: #9c30fe;
@@ -1097,17 +1102,6 @@ padding:20px;
 
 }
 
-.hero-planet {
-  top: 22%;
-  left: 50%;
-  animation: rotatePlanetWithOffset 40s linear infinite;
-  position: absolute;
-  border-radius: 50%;
-  background: url("images/LogogradientAsset-15@4x.png") no-repeat center;
-  background-size: cover;
-}
-
-
 /* Responsive */
 @media (max-width: 480px) {
     .contact-grid {
@@ -1366,7 +1360,7 @@ transform:translateX(8px);
 /* ===================== RESPONSIVE OVERRIDES ===================== */
 
 body {
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .hero {
@@ -1514,7 +1508,7 @@ body {
 
 /* Hero needs no top padding since it's full viewport */
 .hero {
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 /* ===== Lightbox ===== */
