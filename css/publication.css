@@ -894,7 +894,6 @@ font-family: "Mina", sans-serif;}
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        overflow: scroll;
     }
 
     .book {
@@ -902,7 +901,6 @@ font-family: "Mina", sans-serif;}
         display: flex;
         box-shadow: 0 40px 120px rgba(0, 0, 0, 0.9), 0 0 60px rgba(0, 212, 255, 0.05);
         border-radius: 6px;
-        overflow: scroll;
     }
 
     .book-page {
@@ -913,7 +911,6 @@ font-family: "Mina", sans-serif;}
         background: #0a0a1a;
         position: relative;
         display: block;
-        overflow: scroll;
     }
     @media screen and (max-width: 980px) {
     .book-page {
