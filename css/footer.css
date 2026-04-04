@@ -1,4 +1,3 @@
-
 /* FOOTER */
 
 .space-footer{
@@ -34,8 +33,12 @@ to{transform:translateY(-1000px);}
 }
 
 /* CONTAINER */
-
-.footer-container{
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+/* .footer-container{
 position:relative;
 z-index:2;
 max-width:1200px;
@@ -44,7 +47,7 @@ display:grid;
 grid-template-columns:1fr 1fr 1fr;
 gap:40px;
 align-items:center;
-}
+} */
 
 /* LINKS */
 
@@ -52,7 +55,6 @@ align-items:center;
 display:flex;
 flex-direction:column;
 gap:10px;
-transform: translate(120px);
 }
 
 .footer-links h3{
@@ -128,44 +130,72 @@ font-size:14px;
 color:#9fdcff;
 }
 
+/* LARGE TABLET / SMALL LAPTOP */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-logo {
+    grid-column: span 2;
+    text-align: center;
+  }
+}
 /* TABLET */
 
-@media (max-width:680px){
+/* TABLET */
+@media (max-width: 680px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-.footer-container{
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
+  .footer-logo {
+    grid-column: span 2;
+    text-align: center;
+  }
+}/* MOBILE */
 
-.footer-logo{
-grid-column:span 2;
-}
-
-}
 /* MOBILE */
+@media (max-width: 480px) {
 
-@media (max-width:480px){
+  .space-footer {
+    padding: 60px 15px 25px;
+  }
 
-.space-footer{
-padding:80px 20px 30px;
-}
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
 
-.footer-container{
-grid-template-columns:1fr;
-text-align:center;
-gap:35px;
-}
+  .footer-logo {
+    grid-column: span 1;
+  }
 
-.footer-links{
-align-items:center;
-}
+  .footer-logo img {
+    width: 60px;
+    margin: 0 auto;
+  }
 
-.footer-contact{
-text-align:center;
-}
+  .footer-links {
+    align-items: center;
+    justify-content: center;
+  }
 
-.footer-logo img{
-width:70px;
-}
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
 
+  .footer-contact {
+    text-align: center;
+  }
+
+  /* 🔥 CRITICAL: prevent overflow */
+  .footer-container > * {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
 }

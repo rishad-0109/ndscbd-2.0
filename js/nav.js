@@ -4,7 +4,7 @@
     { href: 'activities.html', label: 'Activities' },
     { href: 'publication.html', label: 'Publication' },
     { href: 'executives.html', label: 'Executives' },
-    {href: 'https://asf25.ndscbd.net/', label: 'Science Fest'},
+    {href: 'https://asf25.ndscbd.net/', label: 'Science Fest', class:'fest-nav-btn'},
   ];
 
   const current = window.location.pathname.split('/').pop() || 'index.html';
@@ -12,7 +12,8 @@
   function buildNav(links, cls) {
     return links.map(p => {
       const active = (p.href === current || (current === '' && p.href === 'index.html')) ? ' active' : '';
-      return `<a href="${p.href}" class="${cls}${active}">${p.label}</a>`;
+      const btnClass = p.class ? ` ${p.class}` : '';
+      return `<a href="${p.href}" class="${cls}${btnClass}${active}">${p.label}</a>`;
     }).join('');
   }
 

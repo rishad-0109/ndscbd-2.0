@@ -57,10 +57,19 @@
   color: rgba(180,235,255,0.8);
   text-decoration: none;
   position: relative;
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
   transition: color 0.3s;
 }
-
+.fest-nav-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #00eaff, #0077ff);
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+}
 .site-nav a::after {
   content: '';
   position: absolute;

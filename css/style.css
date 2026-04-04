@@ -273,6 +273,7 @@ i.fa{
   overflow: hidden;
   transition: 0.4s ease;
   backdrop-filter: blur(6px);
+  text-align: center;
 }
 
 /* Glow layer */
@@ -301,6 +302,7 @@ i.fa{
   background: linear-gradient(135deg, #0db2e5, #1b2cff, #091a3a);
 }
 .fest-btn {
+  margin-top:20px;
   background: linear-gradient(135deg, #0d7de5, #d11bff, #b81e40);
   animation: gradientShift 6s ease infinite;
   font-family: "Orbitron", sans-serif;
@@ -1567,4 +1569,190 @@ body {
 .lightbox-close:hover {
   color: #00d4ff;
   text-shadow: 0 0 10px #00d4ff;
+}
+
+#popup {
+  position: fixed;
+  z-index: 999;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+
+.parent {
+  width: 300px;
+  padding: 20px;
+  perspective: 1000px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  padding-top: 50px;
+  /* border-radius: 10px; */
+  border: 3px solid rgba(255, 255, 255, 0.336);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,#ffffff 0 18.75%); */
+  background-size: 60px 60px;
+  background-position: 0 0, 0 0;
+  /* background-color: #f0f0f0; */
+    border-radius: 10px ;
+
+  width: 100%;
+  box-shadow: rgba(162, 27, 216, 0.301) 0px 30px 30px -10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  backdrop-filter: blur(15px);
+}
+
+.content-box {
+  background: rgba(160, 43, 255, 0.384);
+  /* border-radius: 10px 100px 10px 10px; */
+  transition: all 0.5s ease-in-out;
+  padding: 60px 25px 25px 25px;
+  transform-style: preserve-3d;
+}
+
+.content-box .card-title {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.content-box .card-title:hover {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+.content-box .card-content {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 30px);
+}
+
+.content-box .card-content:hover {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+.content-box .see-more {
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.822);
+  /* border-radius: 5px; */
+  background: white;
+  padding: 0.5rem 0.7rem;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.content-box .see-more:hover {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+.date-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 60px;
+  width: 90px;
+  background: white;
+  border: 1px solid rgba(160, 43, 255, 0.63);
+  /* border-radius: 10px; */
+  padding: 10px;
+  transform: translate3d(0px, 0px, 80px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+.date-box span {
+  display: block;
+  text-align: center;
+}
+
+.date-box .month {
+  color: rgba(73, 13, 122, 0.795);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.date-box .date {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgba(73, 13, 122, 0.795);
+}
+
+/* DESKTOP POSITION */
+@media (min-width: 768px) {
+  #popup {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #popup.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* MOBILE POSITION */
+@media (max-width: 767px) {
+  #popup {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+
+  #popup.active {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  .popup-content {
+    width: 90vw;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.popup-content {
+  position: relative; /* IMPORTANT */
+}
+
+/* Close button */
+.popup-close-btn {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.61);
+  transition: all 0.25s ease;
+  border-radius: 24px;
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.popup-close-btn:hover {
+  color: #fff;
+  transform: scale(1.2);
+
+
+  /* neon glow */
+  text-shadow: 
+    0 0 6px rgba(180, 0, 255, 0.9),
+    0 0 12px rgba(180, 0, 255, 0.7);
 }

@@ -64,22 +64,6 @@
           founded the Notre Dame Science Club at Notre Dame College—the first science club in Bangladesh and the pioneer
           of the nation’s science club movement.
         </p>
-        <!-- <div class="social-buttons">
-          
-          <a href="https://asf25.ndscbd.net/" target="_blank" class="btn fest-btn">
-            <span>Join Science Fest & 35th GKC</span>
-          </a>
-          <a href="https://www.facebook.com/NDSCOfficial" target="_blank" class="btn facebook" >
-            <i class="fa fa-facebook fa-lg"></i>
-            <span></span>
-          </a>
-          
-          <a href="https://www.instagram.com/ndsc_official/" target="_blank" class="btn instagram">
-            <i class="fa fa-instagram fa-lg"></i>
-            
-    <span></span>
-  </a>
-</div> -->
 
 </div>
 
@@ -415,6 +399,10 @@
         <a href="activities.html">Activities</a>
         <a href="publication.html">Publication</a>
         <a href="executives.html">Executives</a>
+        <a href="https://asf25.ndscbd.net/" target="_blank" class="btn fest-btn">
+            <span>Join Science Fest & 35th GKC</span>
+        </a>
+
       </div>
 
       <div class="footer-logo">
@@ -436,6 +424,18 @@
         <p>📧 ndsc.org@gmail.com</p>
 
         <p>📞 +880-1613-065319</p>
+        <div class="social-buttons">
+          <a href="https://www.facebook.com/NDSCOfficial" target="_blank" class="btn facebook" >
+            <i class="fa fa-facebook fa-lg"></i>
+            <span></span>
+          </a>
+          
+          <a href="https://www.instagram.com/ndsc_official/" target="_blank" class="btn instagram">
+            <i class="fa fa-instagram fa-lg"></i>
+            
+    <span></span>
+  </a>
+</div>
 
       </div>
 
@@ -447,6 +447,24 @@
 
   </footer>
 
+<div class="parent" id="popup">
+  <span class="popup-close-btn" onclick="closePopup()">✕</span>
+  <div class="card">
+    <a href="https://asf25.ndscbd.net" style="display:block; text-decoration:none; color:inherit;">
+      <div class="content-box">
+          <span class="card-title">Notre Dame Annual Science Festival 2025 & 35th GKC</span>
+          <p class="card-content">
+              Register now in out exciting segments!
+          </p>
+          <span class="see-more">See More</span>
+      </div>
+      <div class="date-box">
+          <span class="month">April</span>
+          <span class="date">16-18</span>
+      </div>
+  </div>
+  </a>
+</div>
   <script>
     const sections = document.querySelectorAll("section");
 
@@ -675,14 +693,26 @@
       });
     });
 
-     /* Lightbox close button */
-     document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    //  /* Lightbox close button */
+    //  document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
      
-     /* Close lightbox when clicking outside the image */
-     document.getElementById('lightboxModal').addEventListener('click', function(e) {
-       if (e.target === this) closeLightbox();
-     });
+    //  /* Close lightbox when clicking outside the image */
+    //  document.getElementById('lightboxModal').addEventListener('click', function(e) {
+    //    if (e.target === this) closeLightbox();
+    //  });
 
+let shown = false;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200 && !shown) {
+    document.getElementById("popup").classList.add("active");
+    shown = true;
+  }
+});
+
+function closePopup() {
+  document.getElementById("popup").classList.remove("active");
+}
   </script>
 
   <script src="js/warp-loader.js"></script>
