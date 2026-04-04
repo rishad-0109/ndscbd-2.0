@@ -85,7 +85,9 @@ iframe{
 .header-container{
 gap:20px;
 }
-
+.hero-planet{
+  opacity: .75;
+}
 .nav{
 gap:20px;
 }
@@ -115,7 +117,9 @@ top:20px;
 padding:0 20px;
 gap:15px;
 }
-
+.hero-planet{
+  opacity: 1;
+}
 .nav{
 gap:14px;
 }
@@ -151,8 +155,8 @@ justify-content:center;
 position:relative;
 padding:0 60px;
 overflow:hidden;
-padding-right: 20vh;
-padding-left: 20vh;
+/* padding-right: 15vh;
+padding-left: 15vh; */
 }
 
 /* CONTAINER */
@@ -200,6 +204,9 @@ opacity: .75;
 /* PLANET */
 
 .hero-planet{
+  position:absolute;
+right:8%;
+
 width:300px;
 height:300px;
 border-radius:50%;
@@ -243,6 +250,46 @@ font-size:38px;
 
 .hero-text p{
 font-size:15px;
+}
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+@media (max-width:480px){
+
+.hero{
+padding:0 20px;
+text-align:center;
+}
+
+.hero-container{
+  margin-top: 30vh;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
+.hero-text p{
+font-size:14px;
+}
+
+/* planet becomes background decoration */
+
+.hero-planet{
+width:270px;
+height:270px;
+top:3%;
+left:50%;
+transform:translateX(50%);
+}
+
 }
 
 }
@@ -399,12 +446,10 @@ font-size:14px;
 .hero-planet{
 width:220px;
 height:220px;
-top:65%;
+top:-30%;
 right:50%;
 animation: rotatePlanetWithOffset 40s linear infinite;
 position:absolute;
-right:8%;
-top:36%;
 border-radius:50%;
 background:url("images/LogogradientAsset-15@4x.png") no-repeat center;
 background-size:cover;
