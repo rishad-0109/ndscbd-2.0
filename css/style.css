@@ -45,7 +45,7 @@ a {
 
 .header-container {
   max-width: 1200px;
-  margin: auto;
+ margin-top: 45px;
 
   display: flex;
   align-items: center;
@@ -106,8 +106,8 @@ a {
   position: relative;
   padding: 0 60px;
   overflow: hidden;
-  /* padding-right: 15vh;
-padding-left: 15vh; */
+  padding-right: 15vh;
+  padding-left: 15vh; 
 }
 
 /* CONTAINER */
@@ -126,7 +126,7 @@ padding-left: 15vh; */
 /* TEXT */
 
 .hero-text {
-  max-width: 60vh;
+  max-width: 75vh;
 }
 
 .hero-text h1 {
