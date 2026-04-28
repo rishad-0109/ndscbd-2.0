@@ -51,6 +51,7 @@ header:not(.site-header) { display: none; }
 
 h1{
     font-size:48px;
+    text-align: center;
 }
 
 h1 span{
