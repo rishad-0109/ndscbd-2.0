@@ -27,15 +27,11 @@ animation:starMove 80s linear infinite;
 z-index:0;
 }
 
-@keyframes starMove{
-from{transform:translateY(0);}
-to{transform:translateY(-1000px);}
-}
 
 /* CONTAINER */
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1.5fr);
   gap: 40px;
 }
 /* .footer-container{
@@ -54,7 +50,11 @@ align-items:center;
 .footer-links{
 display:flex;
 flex-direction:column;
-gap:10px;
+gap:28px;
+padding-left: 30px;
+position:relative;
+z-index:2;
+cursor: pointer;
 }
 
 .footer-links h3{
@@ -99,6 +99,9 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 transition:0.3s;
+position: relative;
+z-index: 200;
+cursor: pointer;
 }
 
 .dev-btn:hover{
@@ -129,6 +132,124 @@ padding-top:20px;
 font-size:14px;
 color:#9fdcff;
 }
+
+
+/* Container */
+.social-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Base Button */
+.btn {
+  position: relative;
+  padding: 14px 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+/* Glow layer */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+/* Inner shine */
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* FACEBOOK */
+.facebook {
+  background: linear-gradient(135deg, #0db2e5, #1b2cff, #091a3a);
+}
+.linkedin {
+  background: linear-gradient(135deg, #0077b5, #00a0dc, #005a87);
+}
+
+.fest-btn {
+  margin-top:20px;
+  background: linear-gradient(135deg, #0d7de5, #d11bff, #b81e40);
+  animation: gradientShift 6s ease infinite;
+  font-family: "Orbitron", sans-serif;
+  padding: 10px 12px;
+  font-size: 10pt;
+  width: min(220px, 100%);
+}
+.fest-btn:hover {
+  border-color: #9c30fe;
+  /* Animation triggered on hover */
+  animation: glow-pulse 1.5s infinite;
+}
+
+/* Keyframes for the pulsing effect */
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(202, 16, 202, 0.5), 0 0 10px rgba(201, 11, 90, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(156, 48, 254, 0.7), 0 0 30px rgba(156, 48, 254, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(218, 14, 173, 0.5), 0 0 10px rgba(4, 177, 177, 0.3);
+  }
+}
+.facebook::before {
+  background: linear-gradient(135deg, #0db2e5, #4facfe);
+}
+
+/* INSTAGRAM */
+.instagram {
+  background: linear-gradient(135deg, #0db2e5, #a855f7, #ff2e88);
+}
+
+.instagram::before {
+  background: linear-gradient(135deg, #0db2e5, #ff2e88, #a855f7);
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.btn:hover::before {
+  opacity: 1;
+  filter: blur(18px);
+}
+
+/* Animated gradient (optional) */
+.instagram,
+.facebook,
+.fest-btn {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 /* LARGE TABLET / SMALL LAPTOP */
 @media (max-width: 900px) {
@@ -182,6 +303,8 @@ color:#9fdcff;
   .footer-links {
     align-items: center;
     justify-content: center;
+    padding: 0;
+    gap:3px   
   }
 
   .footer-links a {
@@ -199,3 +322,4 @@ color:#9fdcff;
     word-wrap: break-word;
   }
 }
+
