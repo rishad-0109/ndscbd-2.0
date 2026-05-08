@@ -61,22 +61,44 @@ h1 span{
 /* YEAR BUTTONS */
 
 .year-buttons{
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 22px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #00d4ff transparent;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
 
+.year-buttons::-webkit-scrollbar {
+    height: 4px;
+}
+.year-buttons::-webkit-scrollbar-track {
+    background: transparent;
+}
+.year-buttons::-webkit-scrollbar-thumb {
+    background: #00d4ff;
+    border-radius: 4px;
 }
 
 .year-btn{
-    display:block;
-    margin:10px 0;
-    padding:20px 20px;
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:8px;
-    cursor:pointer;
-    background:transparent;
-    font-weight:600;
+    display: inline-block;
+    flex-shrink: 0;
+    margin: 4px 0;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+    color: inherit;
 }
 
 .year-btn.active{
