@@ -261,6 +261,17 @@ body {
 
 /* STRENGTH SECTION */
 
+.about-nds {
+  text-align: justify;
+  line-height: 1.8;
+  padding: 0 25px;
+}
+
+.strength-description {
+  text-align: justify !important;
+  line-height: 1.8;
+}
+
 .strength-section {
   padding: 120px 20px;
   background: rgba(0, 0, 30, 0.17);
