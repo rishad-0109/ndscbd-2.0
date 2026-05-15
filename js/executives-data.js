@@ -322,60 +322,59 @@ window.PANELS = [
   // ── 2022-2023 ─────────────────────────────────────────────────────────────
   {
     label: "2022-2023",
-    folder: "panel23",
+    folder: "images/panel-23",
     members: [
-      { name: "Abu Dhorr",           position: "General Secretary",                        social: {} },
-      { name: "Rokon Yeamony",       position: "Associate General Secretary",              social: {} },
-      { name: "Mahi Khan",           position: "President", department: "Administration",  social: {} },
-      { name: "Yeamin Aman",         position: "President", department: "Project",         social: {} },
-      { name: "Utshav Saha",         position: "President", department: "Publication",     social: {} },
-      { name: "Abrar Faiyaz",        position: "President", department: "LWS",             social: {} },
-      { name: "Hasibul Alam",        position: "President", department: "ICT",             social: { telegram: "https://wa.me/+8801552494638", linkedin: "https://www.linkedin.com/in/hasibul-alam-prionto-1083aa254" } },
-      { name: "Nayon Roy",           position: "Senior Vice President",                    social: {} },
-      { name: "Sadman Al Jami",      position: "Vice President", department: "Project",    social: {} },
-      { name: "Fahmid Alam",         position: "Vice President", department: "Publication", social: {} },
-      { name: "Sadman Shahriar",     position: "Vice President", department: "LWS",        social: {} },
-      { name: "Araktim Khan",        position: "Vice President", department: "ICT",        social: {} }
+      { name: "Abu Dhorr",         image: "gs-23.jpg",  position: "General Secretary",                        social: {} },
+      { name: "Rokon Yeamony",       position: "Associate General Secretary",               image: "ags-23.jpg",       social: {} },
+      { name: "Mahi Khan",           position: "President", department: "Administration", image:"pr(admin)-23.jpg", social: {} },
+      { name: "Yeamin Aman",         position: "President", department: "Project",         image:"pr(project)-23.jpg", social: {} },
+      { name: "Utshav Saha",         position: "President", department: "Publication",     image:"pr(pub)-23.jpg", social: {} },
+      { name: "Abrar Faiyaz",        position: "President", department: "LWS",             image:"pr(lws)-23.jpg", social: {} },
+      { name: "Hasibul Alam",        position: "President", department: "ICT",             image:"pr(ict)-23.jpg", social: { telegram: "https://wa.me/+8801552494638", linkedin: "https://www.linkedin.com/in/hasibul-alam-prionto-1083aa254" } },
+      { name: "Nayon Roy",           position: "Senior Vice President",                    image:"svp-23.jpg", social: {} },
+      { name: "Sadman Al Jami",      position: "Vice President", department: "Project",    image:"vp-project-23.jpg", social: {} },
+      { name: "Fahmid Alam",         position: "Vice President", department: "Publication", image:"vp(pub)-23.jpg", social: {} },
+      { name: "Sadman Shahriar",     position: "Vice President", department: "LWS",        image:"vp(lws)-23.jpg", social: {} },
+      { name: "Araktim Khan",        position: "Vice President", department: "ICT",        image:"vp(ict)-23.jpg", social: {} },
+      { name: "Mashrafi Al Farazi",        position: "Library Secretary", department: "Library",        image:"sec(library)-23.jpg", social: {} }
     ]
   },
 
   // ── 2021-2022 ─────────────────────────────────────────────────────────────
   {
     label: "2021-2022",
-    folder: "panel22",
+    folder: "images/panel-22",
     members: [
-      { name: "Abu Dhorr",            position: "General Secretary",                          social: {} },
-      { name: "Rokon Yeamony",        position: "Associate General Secretary",                social: {} },
-      { name: "Mahi Khan",            position: "President", department: "Administration",    social: {} },
-      { name: "Yeamin Aman",          position: "President", department: "Project",           social: {} },
-      { name: "Utshav Saha",          position: "President", department: "Publication",       social: {} },
-      { name: "Abrar Faiyaz",         position: "President", department: "LWS",               social: {} },
+      { name: "Abrar Mahmuh Hasan",   position: "General Secretary",           image:"gs-22.jpg"  ,             social: {} },
+      { name: "Raihan Mehedi",            position: "President", department: "Administration",  image:"pr(admin)-22.jpg",  social: {} },
+      { name: "Mohammad Rafidul Islam",          position: "President", department: "Project",  image:"pr(project)-22.jpg"    ,     social: {} },
+      { name: "MD. Shahriar Hamim",          position: "President", department: "Publication",  image:"pr(pub)-22.jpg",       social: {} },
+      { name: "Mahadi Mohammad Bhuiyan",         position: "President", department: "LWS",      image:"pr(lws)-22.jpg",         social: {} },
       { name: "Hasibul Alam",         position: "President", department: "ICT",               social: { whatsapp: "https://wa.me/+8801552494638", linkedin: "https://www.linkedin.com/in/hasibul-alam-prionto-1083aa254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" } },
       { name: "Nayon Roy",            position: "Senior Vice President",                      social: {} },
-      { name: "Sadman Al Jami",       position: "Vice President", department: "Project",      social: {} },
-      { name: "Fahmid Alam",          position: "Vice President", department: "Publication",  social: {} },
-      { name: "Sadman Shahriar",      position: "Vice President", department: "LWS",          social: {} },
-      { name: "Araktim Khan",         position: "Vice President", department: "ICT",          social: {} }
+      { name: "Sadman Al Jami",       position: "Vice President", department: "Project",      image:"vp(project)-22.jpg",  social: {} },
+      { name: "Fahmid Alam",          position: "Vice President", department: "Publication",  image:"vp(pub)-22.jpg",  social: {} },
+      { name: "Sadman Shahriar",      position: "Vice President", department: "LWS",          image:"vp(lws)-22.jpg",  social: {} },
+      { name: "Araktim Khan",         position: "Vice President", department: "ICT",          image:"vp(ict)-22.jpg",  social: {} }
     ]
   },
 
   // ── 2020-2021 ─────────────────────────────────────────────────────────────
   {
     label: "2020-2021",
-    folder: "panel21",
+    folder: "panel-21",
     members: [
       { name: "Shahil Mahmud Roktim",   position: "General Secretary",                        social: {} },
       { name: "A.H.M Nafisuzzaman",     position: "Associate General Secretary",              social: {} },
       { name: "Sotirtho Saha Protya",   position: "President", department: "Administration",  social: {} },
-      { name: "Mohammad Riadul Islam",   position: "President", department: "Project",        social: {} },
+      { name: "Mohammad Rafidul Islam",   position: "President", department: "Project",     image:"pr(project)-21.jpg",   social: {} },
       { name: "Partho Protim",           position: "President", department: "LWS",            social: {} },
-      { name: "Taz A Adnan Khan",        position: "President", department: "Publication",     social: {} },
-      { name: "Md. Adnan Rahman",        position: "President", department: "ICT",             social: {} },
-      { name: "A.H.M Nafisuzzaman",      position: "Associate General Secretary",              social: {} },
+      { name: "Md. Shahriar Hamim",        position: "President", department: "Publication",     image:"pr(pub)-21.jpg",     social: {} },
+      { name: "Md. Adnan Rahman",        position: "President", department: "ICT",             image:"pr(ict)-21.jpg",             social: {} },
       { name: "Shahriar Evan",           position: "Senior Vice President",                    social: {} },
-      { name: "Nirupam Debnath",         position: "Vice President", department: "Project",    social: {} },
-      { name: "Fahim Torongo",           position: "Vice President", department: "LWS",        social: {} },
-      { name: "Gazi Amanul Hoque",       position: "Vice President", department: "Publication",social: {} },
+      { name: "",         position: "Vice President", department: "Project",    social: {} },
+      { name: "Nirupam Debnath",           position: "Vice President", department: "LWS",        social: {} },
+      { name: "Gazi Amanul Hoque",       position: "Vice President", department: "Publication",image:"vp(pub)-21.jpg", social: {} },
       { name: "Md. Samiul Islam Rifat",  position: "Vice President", department: "ICT",        social: {} }
     ]
   },
