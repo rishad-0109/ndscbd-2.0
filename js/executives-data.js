@@ -287,7 +287,7 @@ window.PANELS = [
   // ── 2023-2024 ─────────────────────────────────────────────────────────────
   {
   label: "2023-2024",
-  folder: "panel24",
+  folder: "images/panel-24",
   members: [
     { name: "Akram Hossain",        image:"gs-24", position: "General Secretary",                         social: { facebook: "https://www.facebook.com/ayon.hossain.5811?mibextid=ZbWKwL", instagram: "https://www.instagram.com/_.akram_ayon._/", telegram: "https://wa.me/+8801602056796", linkedin: "https://www.linkedin.com/in/akram-hossain-560538276/" } },
     { name: "Min-al Ferdaus",       image:"ags-24", position: "Associate General Secretary",               social: {} },
