@@ -289,7 +289,7 @@ window.PANELS = [
   label: "2023-2024",
   folder: "images/panel-24",
   members: [
-    { name: "Akram Hossain",        image:"gs-24", position: "General Secretary",                         social: { facebook: "https://www.facebook.com/ayon.hossain.5811?mibextid=ZbWKwL", instagram: "https://www.instagram.com/_.akram_ayon._/", telegram: "https://wa.me/+8801602056796", linkedin: "https://www.linkedin.com/in/akram-hossain-560538276/" } },
+    { name: "Akram Hossain",        image:"gs-24.jpg", position: "General Secretary",                         social: { facebook: "https://www.facebook.com/ayon.hossain.5811?mibextid=ZbWKwL", instagram: "https://www.instagram.com/_.akram_ayon._/", telegram: "https://wa.me/+8801602056796", linkedin: "https://www.linkedin.com/in/akram-hossain-560538276/" } },
     { name: "Min-al Ferdaus",       image:"ags-24", position: "Associate General Secretary",               social: {} },
     { name: "Siam Nowshad",         image:"pr(admin)-24", position: "President", department: "Administration",   social: { instagram: "https://www.instagram.com/snow7hd", telegram: "https://wa.me/+8801931807305", linkedin: "https://www.linkedin.com/in/siamthenowshad" } },
     { name: "Ashfakur Rahman",      image:"pr(project)-24", position: "President", department: "Project",          social: {} },
