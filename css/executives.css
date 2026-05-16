@@ -323,7 +323,23 @@ body {
   }
   .year-buttons {
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #00d4ff transparent;
+    padding-bottom: 10px;
+  }
+  .year-buttons::-webkit-scrollbar {
+    height: 4px;
+    display: block;
+  }
+  .year-buttons::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .year-buttons::-webkit-scrollbar-thumb {
+    background: #00d4ff;
+    border-radius: 4px;
   }
 }
 
@@ -341,11 +357,29 @@ body {
     font-size: 26px;
   }
   .year-buttons {
-    gap: 12px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #00d4ff transparent;
+    padding-bottom: 10px;
+  }
+  .year-buttons::-webkit-scrollbar {
+    height: 4px;
+    display: block;
+  }
+  .year-buttons::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .year-buttons::-webkit-scrollbar-thumb {
+    background: #00d4ff;
+    border-radius: 4px;
   }
   .year-btn {
     padding: 12px 14px;
     font-size: 13px;
+    flex-shrink: 0;
   }
   .modal-content {
     width: 90%;

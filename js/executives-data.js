@@ -31,7 +31,7 @@ window.PANELS = [
         position: "General Secretary",
         department: "Administration",
         bio: "Dedicated leader of the club.",
-        image: "GS.png",
+        image: "panel25/gs.jpg",
         social: {
           facebook: "https://www.facebook.com/sreejoy.roy.ankon",
           instagram: "https://www.instagram.com/__.sreejoy.__13?igsh=MXNzemNxNzE4eG9nOA==",
@@ -44,7 +44,7 @@ window.PANELS = [
         position: "Associate General Secretary",
         department: "Administration",
         bio: "Dedicated leader of the club.",
-        image: "AGS.png",
+        image: "panel25/ags.jpg",
         social: {
           facebook: "https://www.facebook.com/share/1C9W3E7qVW/",
           instagram: "https://www.instagram.com/_.adi.tta._?igsh=OG15enR1MWJwNDhj",
@@ -57,7 +57,7 @@ window.PANELS = [
         position: "President",
         department: "Administration",
         bio: "Dedicated leader of the club.",
-        image: "PR-ADMIN.png",
+        image: "panel25/p_adm.jpg",
         social: {
           facebook: "https://www.facebook.com/share/1DzBDhNQYz/",
           instagram: "https://www.instagram.com/afnan_6575?igsh=MWZjZHd4bmpqYWhsdQ==",
@@ -70,7 +70,7 @@ window.PANELS = [
         position: "President",
         department: "Publication",
         bio: "Dedicated leader of the club.",
-        image: "PR-PUBLICATION.png",
+        image: "panel25/p_pub.jpg",
         social: {
           facebook: "https://facebook.com",
           instagram: "https://instagram.com",
@@ -83,7 +83,7 @@ window.PANELS = [
         position: "President",
         department: "Project",
         bio: "Dedicated leader of the club.",
-        image: "PR-PROJECT.png",
+        image: "panel25/p_prj.jpg",
         social: {
           facebook: "https://www.facebook.com/saqlain.mustak.borshon",
           instagram: "https://www.instagram.com/p/DUifQTaEzbnPF26h1PifjSsHyEvEy617IpqQd40/",
@@ -96,7 +96,7 @@ window.PANELS = [
         position: "President",
         department: "L.W.S.",
         bio: "Dedicated leader of the club.",
-        image: "PR-LWS.png",
+        image: "panel25/p_lws.jpg",
         social: {
           facebook: "https://www.facebook.com/share/1HhmPxhzS2/",
           instagram: "https://www.instagram.com/fateen__zaman?igsh=MW1zeTl4M3h3ODd0Zg==",
@@ -109,7 +109,20 @@ window.PANELS = [
         position: "President",
         department: "ICT",
         bio: "Dedicated leader of the club.",
-        image: "PR-ICT.png",
+        image: "panel25/p_ict.jpg",
+        social: {
+          facebook: "https://www.facebook.com/shantanu.paul.33449138",
+          instagram: "https://instagram.com",
+          telegram: "https://t.me",
+          linkedin: "https://linkedin.com"
+        }
+      },
+      {
+        name: "Omar Bin Arif",
+        position: "President",
+        department: "QUIZ",
+        bio: "Dedicated leader of the club.",
+        image: "panel25/p_quiz.jpg",
         social: {
           facebook: "https://www.facebook.com/shantanu.paul.33449138",
           instagram: "https://instagram.com",
@@ -121,7 +134,7 @@ window.PANELS = [
         name: "Md. Mehedi Hasan Sweet",
         position: "Senior Vice President",
         bio: "Dedicated leader of the club.",
-        image: "SPR.png",
+        image: "panel25/svp.jpg",
         social: {
           facebook: "https://www.facebook.com/mehedi.hasan.190907",
           instagram: "https://www.instagram.com/mehedii.hsn05/",
@@ -134,7 +147,7 @@ window.PANELS = [
         position: "Vice President",
         department: "Project",
         bio: "Dedicated leader of the club.",
-        image: "VP-PROJECT.png",
+        image: "panel25/vp_prj.jpg",
         social: {
           facebook: "https://facebook.com",
           instagram: "https://instagram.com",
@@ -173,7 +186,7 @@ window.PANELS = [
         position: "Vice President",
         department: "ICT",
         bio: "Dedicated leader of the club.",
-        image: "VP-ICT.png",
+        image: "panel25/vp_ict.jpg",
         social: {
           facebook: "https://www.facebook.com/sheikhshadab.noor.9",
           instagram: "https://www.instagram.com/sheikhshadabnoor?igsh=NHRhOGw2eWtldmlq",
@@ -186,7 +199,7 @@ window.PANELS = [
         position: "Assistant General Secretary",
         department: "R&D",
         bio: "Dedicated leader of the club.",
-        image: "AGS-RND.png",
+        image: "panel25/ags_rd.jpg",
         social: {
           facebook: "https://facebook.com",
           instagram: "https://instagram.com",
@@ -199,7 +212,7 @@ window.PANELS = [
         position: "Secretary",
         department: "Project",
         bio: "Dedicated leader of the club.",
-        image: "SEC-PROJECT.png",
+        image: "panel25/sec_prj.jpg",
         social: {
           facebook: "https://facebook.com",
           instagram: "https://instagram.com",
@@ -211,7 +224,7 @@ window.PANELS = [
         name: "Aritra Chakraborty Argha",
         position: "Organizing Secretary",
         bio: "Dedicated professional.",
-        image: "ORGANIZING-SEC.png",
+        image: "panel25/s_org.jpg",
         social: {
           facebook: "https://www.facebook.com/aritra.chakraborty.731135",
           instagram: "https://www.instagram.com/_.aritra._un/",
@@ -247,7 +260,7 @@ window.PANELS = [
         name: "Md. Muballig Rahman Sarkar",
         position: "Seminar Secretary",
         bio: "Dedicated leader of the club.",
-        image: "SEMINAR-SC.png",
+        image: "panel25/s_semi.jpg",
         social: {
           facebook: "https://www.facebook.com/muballig.rahman.sarkar",
           instagram: "https://instagram.com",
