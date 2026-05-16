@@ -208,7 +208,7 @@ window.PANELS = [
         }
       },
       {
-        name: "Arian Zaman",
+        name: "Abhishek Chowdhury Argho",
         position: "Secretary",
         department: "Project",
         bio: "Dedicated leader of the club.",
