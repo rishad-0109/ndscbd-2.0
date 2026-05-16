@@ -303,13 +303,13 @@ window.PANELS = [
   folder: "images/panel-24",
   members: [
     { name: "Akram Hossain",        image:"gs-24.jpg", position: "General Secretary",                         social: { facebook: "https://www.facebook.com/ayon.hossain.5811?mibextid=ZbWKwL", instagram: "https://www.instagram.com/_.akram_ayon._/", telegram: "https://wa.me/+8801602056796", linkedin: "https://www.linkedin.com/in/akram-hossain-560538276/" } },
-    { name: "Min-al Ferdaus",       image:"ags-24.jpg", position: "Associate General Secretary",               social: {} },
     { name: "Siam Nowshad",         image:"pr(admin)-24.jpg", position: "President", department: "Administration",   social: { instagram: "https://www.instagram.com/snow7hd", telegram: "https://wa.me/+8801931807305", linkedin: "https://www.linkedin.com/in/siamthenowshad" } },
     { name: "Ashfakur Rahman",      image:"pr(project)-24.jpg", position: "President", department: "Project",          social: {} },
     { name: "Mahmudul Hasan",       image:"pr(pub)-24.jpg", position: "President", department: "Publication",      social: { facebook: "http://fb.com/mahmudulhasan.mridul01", instagram: "https://www.instagram.com/mustard_slevalion/", telegram: "https://wa.me/+8801521757204", linkedin: "https://www.linkedin.com/in/mahmudul-hasan-mridul1/" } },
     { name: "Sinan Bin Alam",       image:"pr(lws)-24.jpg", position: "President", department: "LWS",              social: { facebook: "https://www.facebook.com/alam.sinan", instagram: "https://www.instagram.com/philanderer_73?igsh=ajdmeWZ0b2V1NXNs", telegram: "https://wa.me/qr/QNN4FYEOBPLOJ1" } },
     { name: "Pramit Baidya",        image:"pr(ict)-24.jpg", position: "President", department: "ICT",              social: { facebook: "https://www.facebook.com/profile.php?id=100090461289433", instagram: "https://www.instagram.com/pramit_prashad_baidya?igsh=YzljYTk1ODg3Zg==", telegram: "https://wa.me/+8801621933080" } },
     { name: "Abrar Mahir",          image:"pr(quiz)-24.jpg", position: "President", department: "Quiz",             social: { facebook: "https://www.facebook.com/jawadbin.jahangir.3?mibextid=LQQJ4d", instagram: "https://www.instagram.com/jawadbelayinots/profilecard/?igsh=MWE4YjBhcDg3ZWVnNw==", telegram: "https://wa.me/+8801832173857" } },
+    { name: "Min-al Ferdaus",       image:"ags-24.jpg", position: "Associate General Secretary",               social: {} },
     { name: "Jawad Bin Jahangir",   image:"svp-24.jpg", position: "Senior Vice President",                     social: { facebook: "https://www.facebook.com/jawadbin.jahangir.3?mibextid=LQQJ4d", instagram: "https://www.instagram.com/jawadbelayinots/profilecard/?igsh=MWE4YjBhcDg3ZWVnNw==", telegram: "https://wa.me/+8801832173857" } },
     { name: "Ashfaq Sadiq",         image:"vp(project)-24.jpg", position: "Vice President", department: "Project",     social: { facebook: "https://facebook.com/shifat.the.tiger", instagram: "https://www.instagram.com/Shifu___bhaia", telegram: "https://wa.me/+8801521731390", linkedin: "https://www.linkedin.com/in/ashfaq-sadiq-shifat-bb535a338" } },
     { name: "Hamim Iqbal",          image:"vp(pub)-24.jpg", position: "Vice President", department: "Publication", social: { facebook: "https://www.facebook.com/profile.php?id=100088582827812&mibextid=ZbWKwL", instagram: "https://www.instagram.com/hamim6365/profilecard/?igsh=MW5reWpsaTdhbjczYQ==", telegram: "https://wa.me/message/F2YSTXTPBCMWF1", linkedin: "https://www.linkedin.com/in/hamim-iqbal-shamim-497433283" } },
@@ -324,11 +324,11 @@ window.PANELS = [
     { name: "Muntasir Mahmud",      image:"og-24.jpg", position: "Organizing Secretary",                      social: {} },
     { name: "Tanvirul Huda",        image:"sec(seminar)-24.jpg", position: "Seminar Secretary",                         social: { facebook: "https://www.facebook.com/profile.php?id=100037377161401&mibextid=ZbWKwL", instagram: "https://www.instagram.com/itz_aash_/", telegram: "https://wa.me/qr/263TK2RID3R3A1", linkedin: "https://www.linkedin.com/in/tan-vir-380177308" } },
     { name: "Al-Mojadidur", position: "Publication Secretary",                     social: { instagram: "https://www.instagram.com/a.m.r.lajim_?igsh=MXA0cWgzNzkxYTU3ZQ==", telegram: "https://wa.me/+8801575733830" } },
-    { name: "Bikramjit Sarkar",     image:"sec(office)-24", position: "Office Secretary",                          social: {} },
-    { name: "Sadat Zaman",          image:"sec(library)-24", position: "Library Secretary",                         social: {} },
-    { name: "Timothy Niloy",        image:"sec(tour0-24", position: "Tour Secretary",                            social: { facebook: "https://www.facebook.com/profile.php?id=100086838667859&mibextid=ZbWKwL", instagram: "https://www.instagram.com/invites/contact/?igsh=1du0qopqpndpd&utm_content=rqdrcnn", telegram: "https://wa.me/qr/VAXFULCW4HXGD1" } },
-    { name: "Abdullah Al Siam",     image:"sec(workshop)-24", position: "Workshop Secretary",                        social: { facebook: "https://www.facebook.com/aa.siam.19", instagram: "https://www.instagram.com/aasiam19", telegram: "https://wa.me/qr/Y7PAYGAAQ2M4N1" } },
-    { name: "David Lushai",         image:"sec(entertainment)-24", position: "Entertainment Secretary",                   social: {} }
+    { name: "Bikramjit Sarkar",     image:"sec(office)-24.jpg", position: "Office Secretary",                          social: {} },
+    { name: "Sadat Zaman",          image:"sec(library)-24.jpg", position: "Library Secretary",                         social: {} },
+    { name: "Timothy Niloy",        image:"sec(tour)-24.jpg", position: "Tour Secretary",                            social: { facebook: "https://www.facebook.com/profile.php?id=100086838667859&mibextid=ZbWKwL", instagram: "https://www.instagram.com/invites/contact/?igsh=1du0qopqpndpd&utm_content=rqdrcnn", telegram: "https://wa.me/qr/VAXFULCW4HXGD1" } },
+    { name: "Abdullah Al Siam",     image:"sec(workshop)-24.jpg", position: "Workshop Secretary",                        social: { facebook: "https://www.facebook.com/aa.siam.19", instagram: "https://www.instagram.com/aasiam19", telegram: "https://wa.me/qr/Y7PAYGAAQ2M4N1" } },
+    { name: "David Lushai",         image:"sec(entertainment)-24.jpg", position: "Entertainment Secretary",                   social: {} }
   ]
 },
 
@@ -338,12 +338,12 @@ window.PANELS = [
     folder: "images/panel-23",
     members: [
       { name: "Abu Dhorr",         image: "gs-23.jpg",  position: "General Secretary",                        social: {} },
-      { name: "Rokon Yeamony",       position: "Associate General Secretary",               image: "ags-23.jpg",       social: {} },
       { name: "Mahi Khan",           position: "President", department: "Administration", image:"pr(admin)-23.jpg", social: {} },
       { name: "Yeamin Aman",         position: "President", department: "Project",         image:"pr(project)-23.jpg", social: {} },
       { name: "Utshav Saha",         position: "President", department: "Publication",     image:"pr(pub)-23.jpg", social: {} },
       { name: "Abrar Faiyaz",        position: "President", department: "LWS",             image:"pr(lws)-23.jpg", social: {} },
       { name: "Hasibul Alam",        position: "President", department: "ICT",             image:"pr(ict)-23.jpg", social: { telegram: "https://wa.me/+8801552494638", linkedin: "https://www.linkedin.com/in/hasibul-alam-prionto-1083aa254" } },
+      { name: "Rokon Yeamony",       position: "Associate General Secretary",               image: "ags-23.jpg",       social: {} },
       { name: "Nayon Roy",           position: "Senior Vice President",                    image:"svp-23.jpg", social: {} },
       { name: "Sadman Al Jami",      position: "Vice President", department: "Project",    image:"vp-project-23.jpg", social: {} },
       { name: "Fahmid Alam",         position: "Vice President", department: "Publication", image:"vp(pub)-23.jpg", social: {} },
@@ -378,12 +378,12 @@ window.PANELS = [
     folder: "panel-21",
     members: [
       { name: "Shahil Mahmud Roktim",   position: "General Secretary",                        social: {} },
-      { name: "A.H.M Nafisuzzaman",     position: "Associate General Secretary",              social: {} },
       { name: "Sotirtho Saha Protya",   position: "President", department: "Administration",  social: {} },
       { name: "Mohammad Rafidul Islam",   position: "President", department: "Project",     image:"pr(project)-21.jpg",   social: {} },
       { name: "Partho Protim",           position: "President", department: "LWS",            social: {} },
       { name: "Md. Shahriar Hamim",        position: "President", department: "Publication",     image:"pr(pub)-21.jpg",     social: {} },
       { name: "Md. Adnan Rahman",        position: "President", department: "ICT",             image:"pr(ict)-21.jpg",             social: {} },
+      { name: "A.H.M Nafisuzzaman",     position: "Associate General Secretary",              social: {} },
       { name: "Shahriar Evan",           position: "Senior Vice President",                    social: {} },
       { name: "",         position: "Vice President", department: "Project",    social: {} },
       { name: "Nirupam Debnath",           position: "Vice President", department: "LWS",        social: {} },
@@ -458,12 +458,12 @@ window.PANELS = [
     folder: "panel17",
     members: [
       { name: "Dewan Fahim Foysal",       position: "General Secretary",                        social: {} },
-      { name: "Shaikh Nahian",            position: "Associate General Secretary",              social: {} },
       { name: "Aditya Chowdhury",         position: "President", department: "Administration",  social: {} },
       { name: "Eftykhar Rahman Raufu",    position: "President", department: "Project",         social: {} },
       { name: "Md. Shihabuzzaman",        position: "President", department: "LWS",             social: {} },
       { name: "Md. Sakif Uddin Khan",     position: "President", department: "Publication",     social: {} },
       { name: "Mukarra-Bin Haque Nibir",  position: "President", department: "ICT",             social: {} },
+      { name: "Shaikh Nahian",            position: "Associate General Secretary",              social: {} },
       { name: "Ujayer Ahmed Siddique",    position: "Senior Vice President",                    social: {} },
       { name: "Mahadi Abser Turza",       position: "Vice President", department: "Project",    social: {} },
       { name: "Md. Al Farabe",            position: "Vice President", department: "LWS",        social: {} },
@@ -478,12 +478,12 @@ window.PANELS = [
     folder: "panel16",
     members: [
       { name: "Md. Labib Sharar",         position: "General Secretary",                        social: {} },
-      { name: "B.M. Muftadin Pranto",     position: "Associate General Secretary",              social: {} },
       { name: "Taoseef Ishtiak",          position: "President", department: "Administration",  social: {} },
       { name: "Farhan Tanvir Kawshik",    position: "President", department: "Project",         social: {} },
       { name: "Md Alif Biswas",           position: "President", department: "Publication",     social: {} },
       { name: "Nabil Ahmed Durjoy",       position: "President", department: "LWS",             social: {} },
       { name: "Shah Jamil Bhuiyan Niloy", position: "President", department: "ICT",             social: {} },
+      { name: "B.M. Muftadin Pranto",     position: "Associate General Secretary",              social: {} },
       { name: "Kazi Saminur Rahman",      position: "Senior Vice President",                    social: {} },
       { name: "Saad Ul Islam Ninad",      position: "Vice President", department: "Project",    social: {} },
       { name: "Arif Mahtab Kabir",        position: "Vice President", department: "Publication", social: {} },
@@ -499,12 +499,12 @@ window.PANELS = [
     folder: "panel15",
     members: [
       { name: "Md. Sayem Sarker",         position: "General Secretary",                        social: {} },
-      { name: "Anthony Sumit Baidya",     position: "Associate General Secretary",              social: {} },
       { name: "Sinan Arefeen",            position: "President", department: "Administration",  social: {} },
       { name: "Imran Kabir",              position: "President", department: "Project",         social: {} },
       { name: "Adham Ibrahim Rahman",     position: "President", department: "Publication",     social: {} },
       { name: "Sushmit Hossain",          position: "President", department: "LWS",             social: {} },
       { name: "Hasin Rayhan Dewan Dhruboo", position: "President", department: "ICT",           social: {} },
+      { name: "Anthony Sumit Baidya",     position: "Associate General Secretary",              social: {} },
       { name: "Syed Ibn Mohsin (Tamzid)", position: "Senior Vice President",                    social: {} },
       { name: "Abdulah Al Rafi Fahim",    position: "Vice President", department: "Project",    social: {} },
       { name: "Naveed Mahmud",            position: "Vice President", department: "Publication", social: {} },
@@ -519,12 +519,12 @@ window.PANELS = [
     folder: "panel14",
     members: [
       { name: "Farhanul Huda",            position: "General Secretary",                        social: {} },
-      { name: "Ashraf Ibn Rahman Dip",    position: "Associate General Secretary",              social: {} },
       { name: "Hironmoy Ahmed Anan",      position: "President", department: "Administration",  social: {} },
       { name: "Hameed Hasan Alvee",       position: "President", department: "ICT",             social: {} },
       { name: "Ehsanul Kabir Amit",       position: "Vice President", department: "Project",    social: {} },
       { name: "Shafi Arefin Chowdhury",   position: "Vice President", department: "LWS",       social: {} },
-      { name: "Mohammad Chanchal Chowdhury", position: "Vice President", department: "ICT",    social: {} }
+      { name: "Mohammad Chanchal Chowdhury", position: "Vice President", department: "ICT",    social: {} },
+      { name: "Ashraf Ibn Rahman Dip",    position: "Associate General Secretary",              social: {} }
     ]
   },
 
@@ -534,11 +534,11 @@ window.PANELS = [
     folder: "panel13",
     members: [
       { name: "Mustakim Ahmed Sunny",     position: "General Secretary",                        social: {} },
-      { name: "Rafid Kader Rivu",         position: "Associate General Secretary",              social: {} },
       { name: "Aaqib Sadeq",              position: "President", department: "Administration",  social: {} },
       { name: "Saumik Barua Santu",       position: "President", department: "Publication",     social: {} },
       { name: "S.M. Nayeem Arefin",       position: "President", department: "LWS",             social: {} },
       { name: "Niloy Eric Costa",         position: "President", department: "ICT",             social: {} },
+      { name: "Rafid Kader Rivu",         position: "Associate General Secretary",              social: {} },
       { name: "Muhammad Muhyminul Islam (Mahi)", position: "Senior Vice President",             social: {} },
       { name: "Partha Pratim Sharma",     position: "Vice President", department: "Project",    social: {} },
       { name: "Abdullah al Rafi",         position: "Vice President", department: "Publication", social: {} },
@@ -553,12 +553,12 @@ window.PANELS = [
     folder: "panel12",
     members: [
       { name: "S M Arif Faisal (Ani)",    position: "General Secretary",                        social: {} },
-      { name: "Mostafiz Emtiaz",          position: "Associate General Secretary",              social: {} },
       { name: "Shazzadur Rahman",         position: "President", department: "Administration",  social: {} },
       { name: "Pankaj Das",               position: "President", department: "Project",         social: {} },
       { name: "Maruf Raihan",             position: "President", department: "Publication",     social: {} },
       { name: "Zaki Anan",                position: "President", department: "LWS",             social: {} },
       { name: "Ibrahim Redwan",           position: "President", department: "ICT",             social: {} },
+      { name: "Mostafiz Emtiaz",          position: "Associate General Secretary",              social: {} },
       { name: "Nafiul Hasan Nabil",       position: "Senior Vice President",                    social: {} },
       { name: "MD. Wasif Anjum",          position: "Vice President", department: "Project",    social: {} },
       { name: "Abdullah al Rafi",         position: "Vice President", department: "Publication", social: {} },
@@ -573,11 +573,11 @@ window.PANELS = [
     folder: "panel11",
     members: [
       { name: "Ridwan Ahmed Ami",         position: "General Secretary",                        social: {} },
-      { name: "Manoj Ghosh",              position: "Associate General Secretary",              social: {} },
       { name: "Abir Shaqran Mahmood",     position: "President", department: "Administration",  social: {} },
       { name: "Md. MuizTahsinTouki",      position: "President", department: "Publication",     social: {} },
       { name: "MD Moinul Hossain Rahat",  position: "President", department: "LWS",             social: {} },
       { name: "Anitam Das Nirjhar",       position: "President", department: "ICT",             social: {} },
+       { name: "Manoj Ghosh",              position: "Associate General Secretary",              social: {} },
       { name: "Md Shams E Tabriz (Tonmoy)", position: "Senior Vice President",                 social: {} },
       { name: "Nafis Bin Masud (Shovon)", position: "Vice President", department: "Project",    social: {} },
       { name: "Sunviraj Islam Rifat",     position: "Vice President", department: "Publication", social: {} },
@@ -592,11 +592,12 @@ window.PANELS = [
     folder: "panel10",
     members: [
       { name: "K M Murshed Al Maroof",    position: "General Secretary",                        social: {} },
-      { name: "Mostofa Jamil (Radif)",    position: "Associate General Secretary",              social: {} },
       { name: "Abir Rahman Chowdhury Utsha", position: "President", department: "Administration", social: {} },
       { name: "Md. Rafael",               position: "President", department: "ICT",             social: {} },
       { name: "S.M. Ziad Mahmud Tomal",   position: "President", department: "Publication",     social: {} },
       { name: "MD TARIFUL ISLAM SATU",    position: "President", department: "LWS",             social: {} },
+      { name: "Mostofa Jamil (Radif)",    position: "Associate General Secretary",              social: {} },
+       { name: "Mostofa Jamil (Radif)",    position: "Associate General Secretary",              social: {} },
       { name: "Md Shams E Tabriz (Tonmoy)", position: "Senior Vice President",                 social: {} },
       { name: "Nafis Bin Masud (Shovon)", position: "Vice President", department: "Project",    social: {} },
       { name: "Sunviraj Islam Rifat",     position: "Vice President", department: "Publication", social: {} },
@@ -610,11 +611,11 @@ window.PANELS = [
     folder: "panel09",
     members: [
       { name: "K M Murshed Al Maroof",    position: "General Secretary",                        social: {} },
-      { name: "Mostofa Jamil (Radif)",    position: "Associate General Secretary",              social: {} },
       { name: "Abir Rahman Chowdhury Utsha", position: "President", department: "Administration", social: {} },
       { name: "Md. Rafael",               position: "President", department: "ICT",             social: {} },
       { name: "S.M. Ziad Mahmud Tomal",   position: "President", department: "Publication",     social: {} },
       { name: "MD TARIFUL ISLAM SATU",    position: "President", department: "LWS",             social: {} },
+      { name: "Mostofa Jamil (Radif)",    position: "Associate General Secretary",              social: {} },
       { name: "Md Shams E Tabriz (Tonmoy)", position: "Senior Vice President",                 social: {} },
       { name: "Nafis Bin Masud (Shovon)", position: "Vice President", department: "Project",    social: {} },
       { name: "Sunviraj Islam Rifat",     position: "Vice President", department: "Publication", social: {} },
@@ -688,11 +689,11 @@ window.PANELS = [
     folder: "panel04",
     members: [
       { name: "Asif Iqbal",               position: "General Secretary",                        social: {} },
-      { name: "Ovinu Kibria Islam",        position: "Associate General Secretary",              social: {} },
       { name: "Md Ariful islam Bhuiyan",  position: "President", department: "Administration",  social: {} },
       { name: "Fauzul Azim Kibria",       position: "President", department: "Project",         social: {} },
       { name: "Sadlee Islam Ruhdan",      position: "President", department: "Publication",     social: {} },
       { name: "Rubaiayt Raihan",          position: "President", department: "LWS",             social: {} },
+      { name: "Ovinu Kibria Islam",        position: "Associate General Secretary",              social: {} },
       { name: "Md Mydul Islam",           position: "Senior Vice President",                    social: {} },
       { name: "Fabian Khan",              position: "Vice President",                           social: {} },
       { name: "Abdullah An-nur",          position: "Vice President",                           social: {} }
@@ -705,12 +706,12 @@ window.PANELS = [
     folder: "panel03",
     members: [
       { name: "Nashid Shahriar",          position: "General Secretary",                        social: {} },
-      { name: "Sharrief Chowdhury",       position: "Associate General Secretary",              social: {} },
       { name: "Imran Hossain Khan",       position: "President", department: "Administration",  social: {} },
       { name: "Saad Muntazim",            position: "President", department: "Project",         social: {} },
       { name: "Mehedi Hassan",            position: "President", department: "Publication",     social: {} },
       { name: "Saekh Hasan Shetu",        position: "Vice President",                           social: {} },
       { name: "Arnab Paul",               position: "Vice President",                           social: {} },
+      { name: "Sharrief Chowdhury",       position: "Associate General Secretary",              social: {} },
       { name: "Md. Nazmul Azim Beg (Rezwan)", position: "Senior Vice President",               social: {} }
     ]
   },
@@ -723,6 +724,7 @@ window.PANELS = [
       { name: "Numair Muhhammad Fadlullah", position: "General Secretary",                      social: {} },
       { name: "Hasibul Haque",            position: "Associate General Secretary",              social: {} },
       { name: "Dipan Chowdhury Barua (Amit)", position: "President", department: "Administration", social: {} },
+      { name: "Hasibul Haque",            position: "Associate General Secretary",              social: {} },
       { name: "Kallol Banik",             position: "Senior Vice President",                    social: {} },
       { name: "Ovinu Kibria Islam",       position: "Vice President",                           social: {} }
     ]
