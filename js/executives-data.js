@@ -208,7 +208,7 @@ window.PANELS = [
         }
       },
       {
-        name: "Arian Zaman",
+        name: "Abhishek Chowdhury Argho",
         position: "Secretary",
         department: "Project",
         bio: "Dedicated leader of the club.",
@@ -324,11 +324,11 @@ window.PANELS = [
     { name: "Muntasir Mahmud",      image:"og-24.jpg", position: "Organizing Secretary",                      social: {} },
     { name: "Tanvirul Huda",        image:"sec(seminar)-24.jpg", position: "Seminar Secretary",                         social: { facebook: "https://www.facebook.com/profile.php?id=100037377161401&mibextid=ZbWKwL", instagram: "https://www.instagram.com/itz_aash_/", telegram: "https://wa.me/qr/263TK2RID3R3A1", linkedin: "https://www.linkedin.com/in/tan-vir-380177308" } },
     { name: "Al-Mojadidur", position: "Publication Secretary",                     social: { instagram: "https://www.instagram.com/a.m.r.lajim_?igsh=MXA0cWgzNzkxYTU3ZQ==", telegram: "https://wa.me/+8801575733830" } },
-    { name: "Bikramjit Sarkar",     image:"sec(office)-24", position: "Office Secretary",                          social: {} },
-    { name: "Sadat Zaman",          image:"sec(library)-24", position: "Library Secretary",                         social: {} },
-    { name: "Timothy Niloy",        image:"sec(tour0-24", position: "Tour Secretary",                            social: { facebook: "https://www.facebook.com/profile.php?id=100086838667859&mibextid=ZbWKwL", instagram: "https://www.instagram.com/invites/contact/?igsh=1du0qopqpndpd&utm_content=rqdrcnn", telegram: "https://wa.me/qr/VAXFULCW4HXGD1" } },
-    { name: "Abdullah Al Siam",     image:"sec(workshop)-24", position: "Workshop Secretary",                        social: { facebook: "https://www.facebook.com/aa.siam.19", instagram: "https://www.instagram.com/aasiam19", telegram: "https://wa.me/qr/Y7PAYGAAQ2M4N1" } },
-    { name: "David Lushai",         image:"sec(entertainment)-24", position: "Entertainment Secretary",                   social: {} }
+    { name: "Bikramjit Sarkar",     image:"sec(office)-24.jpg", position: "Office Secretary",                          social: {} },
+    { name: "Sadat Zaman",          image:"sec(library)-24.jpg", position: "Library Secretary",                         social: {} },
+    { name: "Timothy Niloy",        image:"sec(tour)-24.jpg", position: "Tour Secretary",                            social: { facebook: "https://www.facebook.com/profile.php?id=100086838667859&mibextid=ZbWKwL", instagram: "https://www.instagram.com/invites/contact/?igsh=1du0qopqpndpd&utm_content=rqdrcnn", telegram: "https://wa.me/qr/VAXFULCW4HXGD1" } },
+    { name: "Abdullah Al Siam",     image:"sec(workshop)-24.jpg", position: "Workshop Secretary",                        social: { facebook: "https://www.facebook.com/aa.siam.19", instagram: "https://www.instagram.com/aasiam19", telegram: "https://wa.me/qr/Y7PAYGAAQ2M4N1" } },
+    { name: "David Lushai",         image:"sec(entertainment)-24.jpg", position: "Entertainment Secretary",                   social: {} }
   ]
 },
 
@@ -525,7 +525,8 @@ window.PANELS = [
       { name: "Ashraf Ibn Rahman Dip",    position: "Associate General Secretary",              social: {} },
       { name: "Ehsanul Kabir Amit",       position: "Vice President", department: "Project",    social: {} },
       { name: "Shafi Arefin Chowdhury",   position: "Vice President", department: "LWS",       social: {} },
-      { name: "Mohammad Chanchal Chowdhury", position: "Vice President", department: "ICT",    social: {} }
+      { name: "Mohammad Chanchal Chowdhury", position: "Vice President", department: "ICT",    social: {} },
+      { name: "Ashraf Ibn Rahman Dip",    position: "Associate General Secretary",              social: {} }
     ]
   },
 
@@ -712,6 +713,7 @@ window.PANELS = [
       { name: "Sharrief Chowdhury",       position: "Associate General Secretary",              social: {} },
       { name: "Saekh Hasan Shetu",        position: "Vice President",                           social: {} },
       { name: "Arnab Paul",               position: "Vice President",                           social: {} },
+      { name: "Sharrief Chowdhury",       position: "Associate General Secretary",              social: {} },
       { name: "Md. Nazmul Azim Beg (Rezwan)", position: "Senior Vice President",               social: {} }
     ]
   },
