@@ -29,7 +29,6 @@ window.PANELS = [
       {
         name: "Sreejoy Roy Ankon",
         position: "General Secretary",
-        department: "Administration",
         bio: "Dedicated leader of the club.",
         image: "panel25/gs.jpg",
         social: {
@@ -302,10 +301,10 @@ window.PANELS = [
   label: "2023-2024",
   folder: "images/panel-24",
   members: [
-    { name: "Akram Hossain",        image:"gs-24.jpg", position: "General Secretary",                         social: { facebook: "https://www.facebook.com/ayon.hossain.5811?mibextid=ZbWKwL", instagram: "https://www.instagram.com/_.akram_ayon._/", telegram: "https://wa.me/+8801602056796", linkedin: "https://www.linkedin.com/in/akram-hossain-560538276/" } },
-    { name: "Siam Nowshad",         image:"pr(admin)-24.jpg", position: "President", department: "Administration",   social: { instagram: "https://www.instagram.com/snow7hd", telegram: "https://wa.me/+8801931807305", linkedin: "https://www.linkedin.com/in/siamthenowshad" } },
-    { name: "Ashfakur Rahman",      image:"pr(project)-24.jpg", position: "President", department: "Project",          social: {} },
-    { name: "Mahmudul Hasan",       image:"pr(pub)-24.jpg", position: "President", department: "Publication",      social: { facebook: "http://fb.com/mahmudulhasan.mridul01", instagram: "https://www.instagram.com/mustard_slevalion/", telegram: "https://wa.me/+8801521757204", linkedin: "https://www.linkedin.com/in/mahmudul-hasan-mridul1/" } },
+    { name: "Gazi Akram Hossain Ayon",        image:"gs-24.jpg", position: "General Secretary",                         social: { facebook: "https://www.facebook.com/ayon.hossain.5811?mibextid=ZbWKwL", instagram: "https://www.instagram.com/_.akram_ayon._/", telegram: "https://wa.me/+8801602056796", linkedin: "https://www.linkedin.com/in/akram-hossain-560538276/" } },
+    { name: "Md. Siam Nowshad",         image:"pr(admin)-24.jpg", position: "President", department: "Administration",   social: { instagram: "https://www.instagram.com/snow7hd", telegram: "https://wa.me/+8801931807305", linkedin: "https://www.linkedin.com/in/siamthenowshad" } },
+    { name: "Mahmudul Hasan Mridul",       image:"pr(pub)-24.jpg", position: "President", department: "Publication",      social: { facebook: "http://fb.com/mahmudulhasan.mridul01", instagram: "https://www.instagram.com/mustard_slevalion/", telegram: "https://wa.me/+8801521757204", linkedin: "https://www.linkedin.com/in/mahmudul-hasan-mridul1/" } },
+    { name: "Md. Ashfakur Rahman Mahim",      image:"pr(project)-24.jpg", position: "President", department: "Project",          social: {} },
     { name: "Sinan Bin Alam",       image:"pr(lws)-24.jpg", position: "President", department: "LWS",              social: { facebook: "https://www.facebook.com/alam.sinan", instagram: "https://www.instagram.com/philanderer_73?igsh=ajdmeWZ0b2V1NXNs", telegram: "https://wa.me/qr/QNN4FYEOBPLOJ1" } },
     { name: "Pramit Baidya",        image:"pr(ict)-24.jpg", position: "President", department: "ICT",              social: { facebook: "https://www.facebook.com/profile.php?id=100090461289433", instagram: "https://www.instagram.com/pramit_prashad_baidya?igsh=YzljYTk1ODg3Zg==", telegram: "https://wa.me/+8801621933080" } },
     { name: "Abrar Mahir",          image:"pr(quiz)-24.jpg", position: "President", department: "Quiz",             social: { facebook: "https://www.facebook.com/jawadbin.jahangir.3?mibextid=LQQJ4d", instagram: "https://www.instagram.com/jawadbelayinots/profilecard/?igsh=MWE4YjBhcDg3ZWVnNw==", telegram: "https://wa.me/+8801832173857" } },
