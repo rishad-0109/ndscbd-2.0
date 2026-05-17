@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <h3>Contact</h3>
       <p>📍 G.P.O Box 5, Toyenbee Circular Rd,<br>Dhaka 1000</p>
       <p>📧 ndsc.org@gmail.com</p>
-      <p>📞 +880-1613-065319</p>
+      <p>📞 +880-1568-171970</p>
       <div class="social-buttons">
         <a href="https://www.facebook.com/NDSCOfficial" target="_blank" class="btn facebook">
           <i class="fa fa-facebook fa-lg"></i>
