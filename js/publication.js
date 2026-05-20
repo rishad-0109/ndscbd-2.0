@@ -62,12 +62,12 @@
       const rightPage = document.getElementById('rightPage');
 
       if (p.left) {
-        leftPage.innerHTML = `<img src="pages/${p.left}.png?v=4" loading="lazy"><div class="page-shadow-left"></div>`;
+        leftPage.innerHTML = `<img src="pages/${p.left}.png?v=${Date.now()}" loading="lazy"><div class="page-shadow-left"></div>`;
       } else {
         leftPage.innerHTML = `<div class="page-empty"><svg viewBox="0 0 24 24" style="width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="page-shadow-left"></div>`;
       }
       if (p.right) {
-        rightPage.innerHTML = `<img src="pages/${p.right}.png?v=4" loading="lazy"><div class="page-shadow-right"></div>`;
+        rightPage.innerHTML = `<img src="pages/${p.right}.png?v=${Date.now()}" loading="lazy"><div class="page-shadow-right"></div>`;
       } else {
         rightPage.innerHTML = `<div class="page-empty"><svg viewBox="0 0 24 24" style="width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="page-shadow-right"></div>`;
       }
@@ -79,8 +79,8 @@
 
       // Preload next spread images
       const np = getPages(spread + 1);
-      if (np.left) { const i = new Image(); i.src = `pages/${np.left}.png?v=4`; }
-      if (np.right) { const i = new Image(); i.src = `pages/${np.right}.png?v=4`; }
+      if (np.left) { const i = new Image(); i.src = `pages/${np.left}.png?v=${Date.now()}`; }
+      if (np.right) { const i = new Image(); i.src = `pages/${np.right}.png?v=${Date.now()}`; }
     }
 
     function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -102,7 +102,7 @@
 
       if (frontPage) {
         const img = document.createElement('img');
-        img.src = `pages/${frontPage}.png?v=4`;
+        img.src = `pages/${frontPage}.png?v=${Date.now()}`;
         overlay.appendChild(img);
       }
       book.appendChild(overlay);
@@ -120,7 +120,7 @@
       overlay.innerHTML = '';
       if (backPage) {
         const img = document.createElement('img');
-        img.src = `pages/${backPage}.png?v=4`;
+        img.src = `pages/${backPage}.png?v=${Date.now()}`;
         img.style.transform = 'scaleX(-1)';
         overlay.appendChild(img);
       }
