@@ -62,7 +62,7 @@
       const rightPage = document.getElementById('rightPage');
 
       if (p.left) {
-        leftPage.innerHTML = `<img src="pages/${p.left}.png?v=2" loading="lazy"><div class="page-shadow-left"></div>`;
+        leftPage.innerHTML = `<img src="pages/${p.left}.png" loading="lazy"><div class="page-shadow-left"></div>`;
       } else {
         leftPage.innerHTML = `<div class="page-empty"><svg viewBox="0 0 24 24" style="width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="page-shadow-left"></div>`;
       }
