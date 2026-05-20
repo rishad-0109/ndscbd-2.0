@@ -472,9 +472,9 @@ window.PANELS = [
     ]
   },
 
-  // ── 2015-2016 ─────────────────────────────────────────────────────────────
+  // ── 2014-2015 ─────────────────────────────────────────────────────────────
   {
-    label: "2015-2016",
+    label: "2014-2015",
     folder: "panel16",
     members: [
       { name: "Md. Labib Sharar",         position: "General Secretary",                        social: {} },
@@ -492,10 +492,10 @@ window.PANELS = [
     ]
   },
 
-  // ── 2014-2015 ─────────────────────────────────────────────────────────────
+  // ── 2013-2014 ─────────────────────────────────────────────────────────────
   // Note: PDF panel session "2013-2014" = college session, panel label = 2014-2015
   {
-    label: "2014-2015",
+    label: "2013-2014",
     folder: "panel15",
     members: [
       { name: "Md. Sayem Sarker",         position: "General Secretary",                        social: {} },
@@ -513,9 +513,9 @@ window.PANELS = [
     ]
   },
 
-  // ── 2013-2014 ─────────────────────────────────────────────────────────────
+  // ── 2012-2013 ─────────────────────────────────────────────────────────────
   {
-    label: "2013-2014",
+    label: "2012-2013",
     folder: "panel14",
     members: [
       { name: "Farhanul Huda",            position: "General Secretary",                        social: {} },
@@ -529,9 +529,9 @@ window.PANELS = [
     ]
   },
 
-  // ── 2012-2013 ─────────────────────────────────────────────────────────────
+  // ── 2011-2012 ─────────────────────────────────────────────────────────────
   {
-    label: "2012-2013",
+    label: "2011-2012",
     folder: "panel13",
     members: [
       { name: "Mustakim Ahmed Sunny",     position: "General Secretary",                        social: {} },
@@ -548,9 +548,9 @@ window.PANELS = [
     ]
   },
 
-  // ── 2011-2012 ─────────────────────────────────────────────────────────────
+  // ── 2010-2011 ─────────────────────────────────────────────────────────────
   {
-    label: "2011-2012",
+    label: "2010-2011",
     folder: "panel12",
     members: [
       { name: "S M Arif Faisal (Ani)",    position: "General Secretary",                        social: {} },
@@ -568,9 +568,9 @@ window.PANELS = [
     ]
   },
 
-  // ── 2010-2011 ─────────────────────────────────────────────────────────────
+  // ── 2009-2010 ─────────────────────────────────────────────────────────────
   {
-    label: "2010-2011",
+    label: "2009-2010",
     folder: "panel11",
     members: [
       { name: "Ridwan Ahmed Ami",         position: "General Secretary",                        social: {} },
@@ -587,23 +587,6 @@ window.PANELS = [
     ]
   },
 
-  // ── 2009-2010 ─────────────────────────────────────────────────────────────
-  {
-    label: "2009-2010",
-    folder: "panel10",
-    members: [
-      { name: "K M Murshed Al Maroof",    position: "General Secretary",                        social: {} },
-      { name: "Abir Rahman Chowdhury Utsha", position: "President", department: "Administration", social: {} },
-      { name: "Md. Rafael",               position: "President", department: "ICT",             social: {} },
-      { name: "S.M. Ziad Mahmud Tomal",   position: "President", department: "Publication",     social: {} },
-      { name: "MD TARIFUL ISLAM SATU",    position: "President", department: "LWS",             social: {} },
-      { name: "Mostofa Jamil (Radif)",    position: "Associate General Secretary",              social: {} },
-      { name: "Md Shams E Tabriz (Tonmoy)", position: "Senior Vice President",                 social: {} },
-      { name: "Nafis Bin Masud (Shovon)", position: "Vice President", department: "Project",    social: {} },
-      { name: "Sunviraj Islam Rifat",     position: "Vice President", department: "Publication", social: {} },
-      { name: "Anindya Shams",            position: "Vice President", department: "LWS",        social: {} }
-    ]
-  },
 
   // ── 2008-2009 ─────────────────────────────────────────────────────────────
   {
