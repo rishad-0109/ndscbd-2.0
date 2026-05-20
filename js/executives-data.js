@@ -471,11 +471,12 @@ window.PANELS = [
       { name: "Sarowar Jahan Saurav",     position: "Vice President", department: "ICT",        social: {} }
     ]
   },
-
+  // ── 2015-2016 ─────────────────────────────────────────────────────────────
+  
   // ── 2014-2015 ─────────────────────────────────────────────────────────────
   {
     label: "2014-2015",
-    folder: "panel16",
+    folder: "panel15",
     members: [
       { name: "Md. Labib Sharar",         position: "General Secretary",                        social: {} },
       { name: "Taoseef Ishtiak",          position: "President", department: "Administration",  social: {} },
@@ -496,7 +497,7 @@ window.PANELS = [
   // Note: PDF panel session "2013-2014" = college session, panel label = 2014-2015
   {
     label: "2013-2014",
-    folder: "panel15",
+    folder: "panel14",
     members: [
       { name: "Md. Sayem Sarker",         position: "General Secretary",                        social: {} },
       { name: "Sinan Arefeen",            position: "President", department: "Administration",  social: {} },
@@ -516,7 +517,7 @@ window.PANELS = [
   // ── 2012-2013 ─────────────────────────────────────────────────────────────
   {
     label: "2012-2013",
-    folder: "panel14",
+    folder: "panel13",
     members: [
       { name: "Farhanul Huda",            position: "General Secretary",                        social: {} },
       { name: "Hironmoy Ahmed Anan",      position: "President", department: "Administration",  social: {} },
@@ -532,7 +533,7 @@ window.PANELS = [
   // ── 2011-2012 ─────────────────────────────────────────────────────────────
   {
     label: "2011-2012",
-    folder: "panel13",
+    folder: "panel12",
     members: [
       { name: "Mustakim Ahmed Sunny",     position: "General Secretary",                        social: {} },
       { name: "Aaqib Sadeq",              position: "President", department: "Administration",  social: {} },
@@ -551,7 +552,7 @@ window.PANELS = [
   // ── 2010-2011 ─────────────────────────────────────────────────────────────
   {
     label: "2010-2011",
-    folder: "panel12",
+    folder: "panel11",
     members: [
       { name: "S M Arif Faisal (Ani)",    position: "General Secretary",                        social: {} },
       { name: "Shazzadur Rahman",         position: "President", department: "Administration",  social: {} },
@@ -571,7 +572,7 @@ window.PANELS = [
   // ── 2009-2010 ─────────────────────────────────────────────────────────────
   {
     label: "2009-2010",
-    folder: "panel11",
+    folder: "panel10",
     members: [
       { name: "Ridwan Ahmed Ami",         position: "General Secretary",                        social: {} },
       { name: "Abir Shaqran Mahmood",     position: "President", department: "Administration",  social: {} },
