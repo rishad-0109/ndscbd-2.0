@@ -9,20 +9,26 @@ body{
 header:not(.site-header) { display: none; }
 .logo img { display: none; }
 
-/* PATRON SECTION */
-.patron-section{
-  position: relative;
-  bottom: 80px;
+/* Principal Section */
+.principal-section{
   display:flex;
   justify-content:center;
+  align-items:center;
+  padding-top:40px;
+}
+/* PATRON SECTION */
+.patron-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
   gap:100px;
-  padding:65px 0;
-  flex-direction: column;
+  padding:40px 0 65px;
+  flex-wrap:wrap;
 }
 .patron{
   justify-content: center;align-items: center;
-    display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+  display: flex;
 }
 .patron img{
   width:250px;
